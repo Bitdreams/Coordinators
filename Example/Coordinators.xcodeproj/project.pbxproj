@@ -12,9 +12,9 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		8BD8D53ABA05F3EEDA03973B /* Pods_Coordinators_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 793B591E51E7E581B1EB4344 /* Pods_Coordinators_Example.framework */; };
+		607FACEC1AFB9204008FA782 /* CoordinatorSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* CoordinatorSpecs.swift */; };
 		967709031FEF25B594F0BE7A /* Pods_Coordinators_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8564DB386BAE06A10F4D4CEA /* Pods_Coordinators_Tests.framework */; };
+		B1DC00C9FB98C92A14428AD5 /* Pods_Coordinators_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 793B591E51E7E581B1EB4344 /* Pods_Coordinators_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,9 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		13F704F1D748929CC40CEC55 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		13F704F1D748929CC40CEC55 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		1BB593743421934988EC3F22 /* Pods-Coordinators_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coordinators_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Coordinators_Tests/Pods-Coordinators_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		48D0465E57D7D09C4B4EDC89 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		48D0465E57D7D09C4B4EDC89 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Coordinators_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coordinators_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,12 +40,15 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* Coordinators_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Coordinators_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		607FACEB1AFB9204008FA782 /* CoordinatorSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorSpecs.swift; sourceTree = "<group>"; };
 		60E7DA757B19F011B3404695 /* Pods-Coordinators_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coordinators_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Coordinators_Tests/Pods-Coordinators_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		793B591E51E7E581B1EB4344 /* Pods_Coordinators_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coordinators_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8564DB386BAE06A10F4D4CEA /* Pods_Coordinators_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coordinators_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		91BB657645A765310BE3547C /* Pods-Coordinators_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coordinators_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Coordinators_Example/Pods-Coordinators_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		9F9D934BF4CD42A61456FB7A /* Coordinators.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = Coordinators.podspec; path = ../Coordinators.podspec; sourceTree = "<group>"; };
+		9F9D934BF4CD42A61456FB7A /* Coordinators.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Coordinators.podspec; path = ../Coordinators.podspec; sourceTree = "<group>"; };
+		A0D8537C1FC139D000F33ADB /* Coordinators.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Coordinators.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0D853851FC13A0800F33ADB /* Coordinators.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Coordinators.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0D853861FC13A0E00F33ADB /* Coordinators.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Coordinators.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C909D80DEB654290A7028B31 /* Pods-Coordinators_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coordinators_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Coordinators_Example/Pods-Coordinators_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,7 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BD8D53ABA05F3EEDA03973B /* Pods_Coordinators_Example.framework in Frameworks */,
+				B1DC00C9FB98C92A14428AD5 /* Pods_Coordinators_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +75,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				A0D853861FC13A0E00F33ADB /* Coordinators.framework */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for Coordinators */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -115,7 +119,7 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				607FACEB1AFB9204008FA782 /* CoordinatorSpecs.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -153,6 +157,8 @@
 		86CDCDE79305AC1DFA4C949C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A0D853851FC13A0800F33ADB /* Coordinators.framework */,
+				A0D8537C1FC139D000F33ADB /* Coordinators.framework */,
 				793B591E51E7E581B1EB4344 /* Pods_Coordinators_Example.framework */,
 				8564DB386BAE06A10F4D4CEA /* Pods_Coordinators_Tests.framework */,
 			);
@@ -386,7 +392,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				607FACEC1AFB9204008FA782 /* CoordinatorSpecs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -567,6 +573,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coordinators_Example.app/Coordinators_Example";
 			};
 			name = Debug;
 		};
@@ -584,6 +591,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coordinators_Example.app/Coordinators_Example";
 			};
 			name = Release;
 		};

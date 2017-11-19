@@ -1,20 +1,21 @@
 {
   "name": "Coordinators",
   "version": "0.1.0",
-  "summary": "A short description of Coordinators.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/raphaelcruzeiro/Coordinators",
+  "summary": "A framework for light flexible Swift MVVM coordinators",
+  "description": "A framework for simple and flexible Swift Coordinators. Ideal to be used with MVVM+Coordinator architectures.",
+  "homepage": "https://github.com/Bitdreams/Coordinators",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "raphaelcruzeiro": "raphaelcruzeiro@raphaelcruzeiro.com"
+    "raphaelcruzeiro": "raphael@bitdreams.co"
   },
   "source": {
-    "git": "https://github.com/raphaelcruzeiro/Coordinators.git",
+    "git": "https://github.com/Bitdreams/Coordinators.git",
     "tag": "0.1.0"
   },
+  "social_media_url": "https://twitter.com/rcdeveloper",
   "platforms": {
     "ios": "8.0"
   },
