@@ -1,6 +1,6 @@
 # Coordinators
 
-[![CI Status](http://img.shields.io/travis/raphaelcruzeiro/Coordinators.svg?style=flat)](https://travis-ci.org/Bitdreams/Coordinators.svg?branch=master)
+[![CI Status](https://travis-ci.org/Bitdreams/Coordinators.svg?branch=mastert)](https://travis-ci.org/Bitdreams/Coordinators)
 [![Version](https://img.shields.io/cocoapods/v/Coordinators.svg?style=flat)](http://cocoapods.org/pods/Coordinators)
 [![License](https://img.shields.io/cocoapods/l/Coordinators.svg?style=flat)](http://cocoapods.org/pods/Coordinators)
 [![Platform](https://img.shields.io/cocoapods/p/Coordinators.svg?style=flat)](http://cocoapods.org/pods/Coordinators)
