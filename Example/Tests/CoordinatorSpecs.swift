@@ -21,12 +21,29 @@ class CoordinatorSpecs: QuickSpec {
     class CoordinatorC: UICoordinator {
         override var hasModalViewController: Bool { return true }
         
+        var wasWillFinishCalled = false
+        var wasFinishCalled = false
+        
+        override func willFinish() {
+            super.willFinish()
+            wasWillFinishCalled = true
+        }
+        
+        override func finish(_ animated: Bool) {
+            super.finish(animated)
+            wasFinishCalled = true
+        }
+    }
+    
+    class CoordinatorD: InternalCoordinator {
+        
         var wasFinishCalled = false
         
         override func finish(_ animated: Bool) {
             super.finish(animated)
             wasFinishCalled = true
         }
+        
     }
     
     override func spec() {
@@ -105,6 +122,17 @@ class CoordinatorSpecs: QuickSpec {
                 expect(c.wasFinishCalled).to(beTrue())
             }
             
+            it("should emit a willFinish before finishing") {
+                let a = CoordinatorA(navigationController: navigationController)
+                a.start(with: nil)
+                let b = CoordinatorB(navigationController: navigationController)
+                b.start(with: a)
+                let c = CoordinatorC(navigationController: navigationController)
+                c.start(with: b)
+                c.finish(true)
+                expect(c.wasWillFinishCalled).to(beTrue())
+            }
+            
             it("should correctly communicate the parent that the child coordinator finished") {
                 let a = CoordinatorA(navigationController: navigationController)
                 a.start(with: nil)
@@ -131,6 +159,37 @@ class CoordinatorSpecs: QuickSpec {
                     c.start(with: b)
                     expect(c.rootCoordinator).to(equal(a))
                 }
+            }
+            
+        }
+        
+        describe("internal coordinator") {
+            
+            var rootCoordinator: UICoordinator!
+            var sut: CoordinatorD!
+            
+            beforeEach {
+                rootCoordinator = CoordinatorA(navigationController: navigationController)
+                rootCoordinator.start(with: nil)
+                sut = CoordinatorD(navigationController: navigationController)
+                sut.rootViewController = InternalViewController()
+                sut.start(with: rootCoordinator)
+            }
+            
+            it("should finish the Coordinator when the viewController is popped from the navigation stack") {
+                expect(navigationController.visibleViewController).toEventually(equal(sut.rootViewController))
+                
+                DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5, execute: {
+                    sut.navigationController.popViewController(animated: false)
+                })
+                
+                expect(sut.wasFinishCalled).toEventually(beTrue())
+            }
+            
+            it("should not finish the Coordinator if another view controller is pushed to the navigation stack") {
+                let c = CoordinatorB(navigationController: navigationController)
+                c.start(with: sut)
+                expect(sut.wasFinishCalled).toNotEventually(beTrue())
             }
             
         }
