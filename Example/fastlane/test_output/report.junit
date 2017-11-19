@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='Coordinators_Tests.xctest' tests='2' failures='0'>
+  <testsuite name='Coordinators_Tests.CoordinatorSpecs' tests='2' failures='0'>
+    <testcase classname='Coordinators_Tests.CoordinatorSpecs' name='initialization__start__doesn_t_have_modal_view_controller__should_push_the_rootViewController_to_the_navigationController_view_stack' time='0.032'/>
+    <testcase classname='Coordinators_Tests.CoordinatorSpecs' name='initialization__start__has_modal_view_controller__should_present_the_coordinator_rootViewController' time='0.010'/>
+  </testsuite>
+</testsuites>

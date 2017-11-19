@@ -1,10 +1,9 @@
 language: objective-c
 osx_image: xcode9.1
 install:
-- ./install_swiftlint.sh
 - gem install bundler
 - bundle install
 - bundle exec pod repo update
 script:
-- swiftlint
+  cd Example
 - bundle exec fastlane test
