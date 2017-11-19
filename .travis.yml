@@ -5,5 +5,5 @@ install:
 - bundle install
 - bundle exec pod repo update
 script:
-  cd Example
+- cd Example
 - bundle exec fastlane test
