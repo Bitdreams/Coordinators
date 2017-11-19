@@ -49,7 +49,36 @@ class CoordinatorSpecs: QuickSpec {
                     
                 }
                 
+                context("starting a child coordinator") {
+                    
+                    it("should register the child coordinator with the parent") {
+                        let parent = CoordinatorA(navigationController: navigationController)
+                        parent.start(with: nil)
+                        let sut = CoordinatorB(navigationController: navigationController)
+                        sut.start(with: parent)
+                        expect(parent.childCoordinators.contains(sut)).to(beTrue())
+                        expect(sut.parent!).to(equal(parent))
+                    }
+                    
+                }
                 
+                
+            }
+            
+        }
+        
+        describe("instance members") {
+            
+            describe("rootCoordinator") {
+                it("should correctly return the root coordinator of a given coordinator hierarchy") {
+                    let a = CoordinatorA(navigationController: navigationController)
+                    a.start(with: nil)
+                    let b = CoordinatorB(navigationController: navigationController)
+                    b.start(with: a)
+                    let c = CoordinatorC(navigationController: navigationController)
+                    c.start(with: b)
+                    expect(c.rootCoordinator).to(equal(a))
+                }
             }
             
         }
