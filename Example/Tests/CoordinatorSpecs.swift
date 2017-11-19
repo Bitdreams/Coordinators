@@ -8,9 +8,25 @@ import Coordinators
 class CoordinatorSpecs: QuickSpec {
     
     class CoordinatorA: UICoordinator {  }
-    class CoordinatorB: UICoordinator {  }
+    class CoordinatorB: UICoordinator {
+        
+        var wasChieldCoordinatorDidFinishCalled: (Bool, Coordinator?) = (false, nil)
+        
+        override func childCoordinatorDidFinish(coordinator: Coordinator) {
+            super.childCoordinatorDidFinish(coordinator: coordinator)
+            wasChieldCoordinatorDidFinishCalled = (true, coordinator)
+        }
+        
+    }
     class CoordinatorC: UICoordinator {
         override var hasModalViewController: Bool { return true }
+        
+        var wasFinishCalled = false
+        
+        override func finish(_ animated: Bool) {
+            super.finish(animated)
+            wasFinishCalled = true
+        }
     }
     
     override func spec() {
@@ -63,6 +79,42 @@ class CoordinatorSpecs: QuickSpec {
                 }
                 
                 
+            }
+            
+        }
+        
+        describe("finish") {
+            
+            it("should remove itself from the parent's child coordinators") {
+                let parent = CoordinatorA(navigationController: navigationController)
+                parent.start(with: nil)
+                let sut = CoordinatorB(navigationController: navigationController)
+                sut.start(with: parent)
+                sut.finish(true)
+                expect(parent.childCoordinators.contains(sut)).to(beFalse())
+            }
+            
+            it("should also finish any child coordinators that might exist") {
+                let a = CoordinatorA(navigationController: navigationController)
+                a.start(with: nil)
+                let b = CoordinatorB(navigationController: navigationController)
+                b.start(with: a)
+                let c = CoordinatorC(navigationController: navigationController)
+                c.start(with: b)
+                b.finish(true)
+                expect(c.wasFinishCalled).to(beTrue())
+            }
+            
+            it("should correctly communicate the parent that the child coordinator finished") {
+                let a = CoordinatorA(navigationController: navigationController)
+                a.start(with: nil)
+                let b = CoordinatorB(navigationController: navigationController)
+                b.start(with: a)
+                let c = CoordinatorC(navigationController: navigationController)
+                c.start(with: b)
+                b.finish(true)
+                expect(b.wasChieldCoordinatorDidFinishCalled.0).to(beTrue())
+                expect(b.wasChieldCoordinatorDidFinishCalled.1).to(equal(c))
             }
             
         }
