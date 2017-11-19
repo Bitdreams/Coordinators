@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'Coordinators'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of Coordinators.'
+  s.summary          = 'A framework for light flexible Swift MVVM coordinators'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,15 +18,15 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+A framework for simple and flexible Swift Coordinators. Ideal to be used with MVVM+Coordinator architectures.
                        DESC
 
-  s.homepage         = 'https://github.com/raphaelcruzeiro/Coordinators'
+  s.homepage         = 'https://github.com/Bitdreams/Coordinators'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'raphaelcruzeiro' => 'raphaelcruzeiro@raphaelcruzeiro.com' }
-  s.source           = { :git => 'https://github.com/raphaelcruzeiro/Coordinators.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'raphaelcruzeiro' => 'raphael@bitdreams.co' }
+  s.source           = { :git => 'https://github.com/Bitdreams/Coordinators.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/rcdeveloper'
 
   s.ios.deployment_target = '8.0'
 
@@ -37,6 +37,6 @@ TODO: Add long description of the pod here.
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'UIKit'
+  s.dependency 'RxSwift'
 end

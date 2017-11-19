@@ -1,0 +1,28 @@
+{
+  "name": "Coordinators",
+  "version": "0.1.0",
+  "summary": "A short description of Coordinators.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/raphaelcruzeiro/Coordinators",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "raphaelcruzeiro": "raphaelcruzeiro@raphaelcruzeiro.com"
+  },
+  "source": {
+    "git": "https://github.com/raphaelcruzeiro/Coordinators.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "Coordinators/Classes/**/*",
+  "frameworks": "UIKit",
+  "dependencies": {
+    "RxSwift": [
+
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+framework module Coordinators {
+  umbrella header "Coordinators-umbrella.h"
+
+  export *
+  module * { export * }
+}
