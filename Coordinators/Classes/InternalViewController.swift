@@ -12,16 +12,16 @@ public protocol InternalViewControllerDelegate: class {
     func viewControllerDidDismiss()
 }
 
-public class InternalViewController: UIViewController {
+open class InternalViewController: UIViewController {
     public weak var delegate: InternalViewControllerDelegate?
     
     private let dummy = UINavigationController()
     
-    public var navigationBarTintColor: UIColor {
+    open var navigationBarTintColor: UIColor {
         return dummy.navigationBar.barTintColor ?? .gray
     }
     
-    public var isNavigationBarTransluscent: Bool {
+    open var isNavigationBarTransluscent: Bool {
         return false
     }
     
@@ -34,7 +34,7 @@ public class InternalViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override public func viewWillAppear(_ animated: Bool) {
+    override open func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.navigationBar.tintColor = navigationBarTintColor
         
@@ -50,7 +50,7 @@ public class InternalViewController: UIViewController {
         }
     }
     
-    override public func didMove(toParentViewController parent: UIViewController?) {
+    override open func didMove(toParentViewController parent: UIViewController?) {
         if parent == nil {
             delegate?.viewControllerDidDismiss()
         }

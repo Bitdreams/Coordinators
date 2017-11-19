@@ -9,13 +9,13 @@
 import Foundation
 import RxSwift
 
-public class Coordinator: NSObject {
+open class Coordinator: NSObject {
     
-    public let disposeBag = DisposeBag()
-    public let navigationController: UINavigationController
-    public var childCoordinators = [Coordinator]()
+    open let disposeBag = DisposeBag()
+    open let navigationController: UINavigationController
+    open var childCoordinators = [Coordinator]()
     
-    public var rootCoordinator: Coordinator {
+    open var rootCoordinator: Coordinator {
         var coordinator: Coordinator = self
         
         while let parent = coordinator.parent {
@@ -25,13 +25,13 @@ public class Coordinator: NSObject {
         return coordinator
     }
     
-    public func start(with parent: Coordinator?) {
+    open func start(with parent: Coordinator?) {
         self.parent = parent
         parent?.childCoordinators.append(self)
     }
     
-    public var hasModalViewController: Bool { return false }
-    public var parent: Coordinator?
+    open var hasModalViewController: Bool { return false }
+    open var parent: Coordinator?
     
     fileprivate var skipPoppingNavigation = false
     
@@ -40,7 +40,7 @@ public class Coordinator: NSObject {
         super.init()
     }
     
-    public func finish(_ animated: Bool) {
+    open func finish(_ animated: Bool) {
         willFinish()
         
         childCoordinators.forEach { child in
@@ -67,16 +67,16 @@ public class Coordinator: NSObject {
         self.parent = nil
     }
     
-    public func childCoordinatorDidFinish(coordinator: Coordinator) { }
-    public func willFinish() { }
+    open func childCoordinatorDidFinish(coordinator: Coordinator) { }
+    open func willFinish() { }
     
 }
 
-public class UICoordinator: Coordinator {
-    public var shouldAutomaticallyManageNavigation: Bool { return true }
-    public var rootViewController = UIViewController()
+open class UICoordinator: Coordinator {
+    open var shouldAutomaticallyManageNavigation: Bool { return true }
+    open var rootViewController = UIViewController()
     
-    override public func start(with parent: Coordinator?) {
+    override open func start(with parent: Coordinator?) {
         super.start(with: parent)
         
         if shouldAutomaticallyManageNavigation {
@@ -90,14 +90,14 @@ public class UICoordinator: Coordinator {
     }
 }
 
-public class InternalCoordinator: UICoordinator, InternalViewControllerDelegate {
+open class InternalCoordinator: UICoordinator, InternalViewControllerDelegate {
     
-    public func viewControllerDidDismiss() {
+    open func viewControllerDidDismiss() {
         skipPoppingNavigation = true
         finish(false)
     }
     
-    override public func start(with parent: Coordinator?) {
+    override open func start(with parent: Coordinator?) {
         (rootViewController as? InternalViewController)?.delegate = self
         super.start(with: parent)
     }
