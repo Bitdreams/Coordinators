@@ -25,6 +25,10 @@ open class InternalViewController: UIViewController {
         return false
     }
     
+    open var navigationBarTextTintColor: UIColor {
+        return dummy.navigationBar.tintColor ?? .gray
+    }
+    
     override public init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nil, bundle: nil)
         view.backgroundColor = .white
