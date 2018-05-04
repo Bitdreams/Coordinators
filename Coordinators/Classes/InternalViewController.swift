@@ -15,10 +15,8 @@ public protocol InternalViewControllerDelegate: class {
 open class InternalViewController: UIViewController {
     public weak var delegate: InternalViewControllerDelegate?
 
-    private let dummy = UINavigationController()
-
     open var navigationBarTintColor: UIColor {
-        return dummy.navigationBar.barTintColor ?? .white
+        return UINavigationBar.appearance().barTintColor ?? .white
     }
 
     open var isNavigationBarTransluscent: Bool {
@@ -26,7 +24,7 @@ open class InternalViewController: UIViewController {
     }
 
     open var navigationBarTextTintColor: UIColor {
-        return dummy.navigationBar.tintColor ?? .black
+        return UINavigationBar.appearance().tintColor ?? .white
     }
 
     override public init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
@@ -49,13 +47,11 @@ open class InternalViewController: UIViewController {
         }
 
         if isNavigationBarTransluscent {
-            navigationController?.navigationBar.backgroundColor = .clear
             navigationController?.navigationBar.shadowImage = UIImage()
             navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         } else {
-            navigationController?.navigationBar.backgroundColor = dummy.navigationBar.backgroundColor
-            navigationController?.navigationBar.shadowImage = dummy.navigationBar.shadowImage
-            navigationController?.navigationBar.setBackgroundImage(dummy.navigationBar.backgroundImage(for: .default), for: .default)
+            navigationController?.navigationBar.shadowImage = UINavigationBar.appearance().shadowImage ?? UIImage()
+            navigationController?.navigationBar.setBackgroundImage(UINavigationBar.appearance().backgroundImage(for: .default), for: .default)
         }
     }
 
