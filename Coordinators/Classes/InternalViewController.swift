@@ -15,6 +15,10 @@ public protocol InternalViewControllerDelegate: class {
 open class InternalViewController: UIViewController {
     public weak var delegate: InternalViewControllerDelegate?
 
+    open var isNavigationBarHidden: Bool {
+        return false
+    }
+
     open var navigationBarTintColor: UIColor {
         return UINavigationBar.appearance().barTintColor ?? .white
     }
@@ -38,6 +42,7 @@ open class InternalViewController: UIViewController {
 
     override open func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = isNavigationBarHidden
         navigationController?.navigationBar.barTintColor = navigationBarTintColor
         navigationController?.navigationBar.tintColor = navigationBarTextTintColor
         navigationController?.navigationBar.isTranslucent = isNavigationBarTransluscent
