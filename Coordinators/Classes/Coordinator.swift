@@ -12,8 +12,8 @@ import RxSwift
 
 open class Coordinator: NSObject {
     
-    open let disposeBag = DisposeBag()
-    open let navigationController: UINavigationController
+    public let disposeBag = DisposeBag()
+    public let navigationController: UINavigationController
     open var childCoordinators = [Coordinator]()
     
     open var rootCoordinator: Coordinator {
@@ -70,6 +70,18 @@ open class Coordinator: NSObject {
     
     open func childCoordinatorDidFinish(coordinator: Coordinator) { }
     open func willFinish() { }
+    
+    open func firstDescendant(where filter: (Coordinator) -> Bool) -> Coordinator? {
+        if childCoordinators.count == 0 {
+            return nil
+        }
+        if let result = childCoordinators.first(where: filter) {
+            return result
+        }
+        return childCoordinators.map {
+            return $0.firstDescendant(where: filter)
+            }.first ?? nil
+    }
     
 }
 

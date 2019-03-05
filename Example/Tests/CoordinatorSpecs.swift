@@ -7,8 +7,12 @@ import Coordinators
 
 class CoordinatorSpecs: QuickSpec {
     
-    class CoordinatorA: UICoordinator {  }
+    class CoordinatorA: UICoordinator {
+        var tag: Int = 0
+    }
     class CoordinatorB: UICoordinator {
+        
+        var tag: Int = 0
         
         var wasChieldCoordinatorDidFinishCalled: (Bool, Coordinator?) = (false, nil)
         
@@ -19,6 +23,9 @@ class CoordinatorSpecs: QuickSpec {
         
     }
     class CoordinatorC: UICoordinator {
+        
+        var tag: Int = 0
+        
         override var hasModalViewController: Bool { return true }
         
         var wasWillFinishCalled = false
@@ -36,6 +43,8 @@ class CoordinatorSpecs: QuickSpec {
     }
     
     class CoordinatorD: InternalCoordinator {
+        
+        var tag: Int = 0
         
         var wasFinishCalled = false
         
@@ -190,6 +199,52 @@ class CoordinatorSpecs: QuickSpec {
                 let c = CoordinatorB(navigationController: navigationController)
                 c.start(with: sut)
                 expect(sut.wasFinishCalled).toNotEventually(beTrue())
+            }
+            
+        }
+        
+        describe("methods") {
+            
+            describe("first descendant") {
+                
+                it("should correctly find the first descendant that satisfies an arbritrary condition") {
+                    let a = CoordinatorA(navigationController: navigationController)
+                    a.start(with: nil)
+                    let b = CoordinatorB(navigationController: navigationController)
+                    b.start(with: a)
+                    let c = CoordinatorC(navigationController: navigationController)
+                    c.tag = 66
+                    c.start(with: b)
+                    let d = CoordinatorD(navigationController: navigationController)
+                    d.start(with: c)
+                    let c2 = CoordinatorC(navigationController: navigationController)
+                    c2.start(with: d)
+                    
+                    let firstDescendant = a.firstDescendant {
+                        ($0 as? CoordinatorC)?.tag == 66
+                    }
+                    expect(firstDescendant).to(equal(c))
+                }
+                
+                it("should return nil if no coordinator satisfies the arbritrary condition") {
+                    let a = CoordinatorA(navigationController: navigationController)
+                    a.start(with: nil)
+                    let b = CoordinatorB(navigationController: navigationController)
+                    b.start(with: a)
+                    let c = CoordinatorC(navigationController: navigationController)
+                    c.tag = 66
+                    c.start(with: b)
+                    let d = CoordinatorD(navigationController: navigationController)
+                    d.start(with: c)
+                    let c2 = CoordinatorC(navigationController: navigationController)
+                    c2.start(with: d)
+                    
+                    let firstDescendant = a.firstDescendant {
+                        ($0 as? CoordinatorC)?.tag == 900
+                    }
+                    expect(firstDescendant).to(beNil())
+                }
+                
             }
             
         }

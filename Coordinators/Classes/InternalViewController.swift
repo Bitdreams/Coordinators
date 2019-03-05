@@ -55,7 +55,7 @@ open class InternalViewController: UIViewController {
         }
     }
 
-    override open func didMove(toParentViewController parent: UIViewController?) {
+    override open func didMove(toParent parent: UIViewController?) {
         if parent == nil {
             delegate?.viewControllerDidDismiss()
         }
