@@ -14,30 +14,35 @@ public protocol InternalViewControllerDelegate: class {
 
 open class InternalViewController: UIViewController {
     public weak var delegate: InternalViewControllerDelegate?
-
+    
+    open var isNavigationBarHidden: Bool {
+        return false
+    }
+    
     open var navigationBarTintColor: UIColor {
         return UINavigationBar.appearance().barTintColor ?? .white
     }
-
+    
     open var isNavigationBarTransluscent: Bool {
         return false
     }
-
+    
     open var navigationBarTextTintColor: UIColor {
         return UINavigationBar.appearance().tintColor ?? .white
     }
-
+    
     override public init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nil, bundle: nil)
         view.backgroundColor = .white
     }
-
+    
     public required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
+    
     override open func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = isNavigationBarHidden
         navigationController?.navigationBar.barTintColor = navigationBarTintColor
         navigationController?.navigationBar.tintColor = navigationBarTextTintColor
         navigationController?.navigationBar.isTranslucent = isNavigationBarTransluscent
@@ -45,7 +50,7 @@ open class InternalViewController: UIViewController {
         if #available(iOS 11.0, *) {
             navigationController?.navigationBar.largeTitleTextAttributes = [.foregroundColor: navigationBarTextTintColor]
         }
-
+        
         if isNavigationBarTransluscent {
             navigationController?.navigationBar.shadowImage = UIImage()
             navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
@@ -54,12 +59,10 @@ open class InternalViewController: UIViewController {
             navigationController?.navigationBar.setBackgroundImage(UINavigationBar.appearance().backgroundImage(for: .default), for: .default)
         }
     }
-
+    
     override open func didMove(toParent parent: UIViewController?) {
         if parent == nil {
             delegate?.viewControllerDidDismiss()
         }
     }
 }
-
-
