@@ -1,22 +1,19 @@
 PODS:
-  - Coordinators (0.1.3):
-    - RxSwift
-  - Nimble (8.0.0)
-  - Quick (2.0.0)
-  - RxAtomic (4.4.1)
-  - RxSwift (4.4.1):
-    - RxAtomic (~> 4.4)
+  - Coordinators (1.0.0):
+    - RxSwift (= 4.3.1)
+  - Nimble (7.3.1)
+  - Quick (1.3.2)
+  - RxSwift (4.3.1)
 
 DEPENDENCIES:
   - Coordinators (from `../`)
-  - Nimble
-  - Quick
+  - Nimble (= 7.3.1)
+  - Quick (= 1.3.2)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Nimble
     - Quick
-    - RxAtomic
     - RxSwift
 
 EXTERNAL SOURCES:
@@ -24,12 +21,11 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Coordinators: 6872d9de94574d3773cddb44873530295bb05229
-  Nimble: a0e6f95b4b91a4f66b6da3512b6bebc07c9cbf49
-  Quick: ce1276c7c27ba2da3cb2fd0cde053c3648b3b22d
-  RxAtomic: f8d6adc1ccb87a767811269e4875887bc74dbf19
-  RxSwift: 92fcf68dfef21f3e2ab1965363d9e7b3d787597e
+  Coordinators: ea0dbe98a5553ff01106ba7a233905a6077e9e2b
+  Nimble: 04f732da099ea4d153122aec8c2a88fd0c7219ae
+  Quick: 2623cb30d7a7f41ca62f684f679586558f483d46
+  RxSwift: fe0fd770a43acdb7d0a53da411c9b892e69bb6e4
 
-PODFILE CHECKSUM: 628a10c352c7281644f51740288952e9cf4b4450
+PODFILE CHECKSUM: 0a40c97668aa1a3a82f9b730fd1d04e0917aa282
 
 COCOAPODS: 1.6.1
