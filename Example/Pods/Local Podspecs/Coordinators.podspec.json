@@ -23,7 +23,7 @@
   "frameworks": "UIKit",
   "dependencies": {
     "RxSwift": [
-      "4.3.1"
+      "4.4.1"
     ]
   }
 }

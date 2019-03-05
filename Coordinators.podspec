@@ -38,5 +38,5 @@ A framework for simple and flexible Swift Coordinators. Ideal to be used with MV
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'
-  s.dependency 'RxSwift', '4.3.1'
+  s.dependency 'RxSwift', '4.4.1'
 end
