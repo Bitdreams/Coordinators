@@ -4,6 +4,10 @@ install:
 - gem install bundler
 - bundle install
 - bundle exec pod repo update
+- cd Example
+- bundle exec pod install
+- ls Pods/Nimble
+- ls Pods/Nimble/Carthage
 script:
 - cd Example
 - bundle exec fastlane test

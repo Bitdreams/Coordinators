@@ -28,7 +28,7 @@ A framework for simple and flexible Swift Coordinators. Ideal to be used with MV
   s.source           = { :git => 'https://github.com/Bitdreams/Coordinators.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/rcdeveloper'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'Coordinators/Classes/**/*'
   
