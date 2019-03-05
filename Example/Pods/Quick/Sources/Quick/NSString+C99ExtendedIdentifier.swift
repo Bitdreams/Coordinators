@@ -1,4 +1,4 @@
-#if canImport(Darwin)
+#if os(macOS) || os(iOS) || os(watchOS) || os(tvOS)
 import Foundation
 
 extension NSString {
@@ -21,7 +21,7 @@ extension NSString {
         return invalidCharacters
     }()
 
-    /// This API is not meant to be used outside Quick, so will be unavailable in
+    /// This API is not meant to be used outside Quick, so will be unavaialbe in
     /// a next major version.
     @objc(qck_c99ExtendedIdentifier)
     public var c99ExtendedIdentifier: String {

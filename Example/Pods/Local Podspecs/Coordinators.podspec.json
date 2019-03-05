@@ -1,6 +1,6 @@
 {
   "name": "Coordinators",
-  "version": "0.1.3",
+  "version": "1.0.0",
   "summary": "A framework for light flexible Swift MVVM coordinators",
   "description": "A framework for simple and flexible Swift Coordinators. Ideal to be used with MVVM+Coordinator architectures.",
   "homepage": "https://github.com/Bitdreams/Coordinators",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/Bitdreams/Coordinators.git",
-    "tag": "0.1.3"
+    "tag": "1.0.0"
   },
   "social_media_url": "https://twitter.com/rcdeveloper",
   "platforms": {
@@ -23,7 +23,7 @@
   "frameworks": "UIKit",
   "dependencies": {
     "RxSwift": [
-
+      "4.3.1"
     ]
   }
 }
