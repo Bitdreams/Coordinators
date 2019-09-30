@@ -24,7 +24,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Coordinators: 31862eaab04f91fb363d01355c9c2abe1daff555
+  Coordinators: 433574a0d6a8171ea266e54a0185c6e7235fdb1a
   Nimble: 18d5360282923225d62b09d781f63abc1a0111fc
   Quick: 7fb19e13be07b5dfb3b90d4f9824c855a11af40e
   RxAtomic: d00e97c10db88c6f08540e0bf2752fc5a2404167

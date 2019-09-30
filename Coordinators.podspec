@@ -10,6 +10,7 @@ Pod::Spec.new do |s|
   s.name             = 'Coordinators'
   s.version          = '1.1.0'
   s.summary          = 'A framework for light flexible Swift MVVM coordinators'
+  s.swift_version    = '5.0'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -38,5 +39,5 @@ A framework for simple and flexible Swift Coordinators. Ideal to be used with MV
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'
-  s.dependency 'RxSwift', '4.4.1'
+  s.dependency 'RxSwift'
 end
