@@ -45,7 +45,7 @@
 		607FACEB1AFB9204008FA782 /* CoordinatorSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorSpecs.swift; sourceTree = "<group>"; };
 		7DAD2954E636E1318FADE2C7 /* Pods-Coordinators_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coordinators_Tests.debug.xcconfig"; path = "Target Support Files/Pods-Coordinators_Tests/Pods-Coordinators_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		9B4E2CF60C3E18A7EE45C6F4 /* Pods-Coordinators_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coordinators_Example.release.xcconfig"; path = "Target Support Files/Pods-Coordinators_Example/Pods-Coordinators_Example.release.xcconfig"; sourceTree = "<group>"; };
-		9F9D934BF4CD42A61456FB7A /* Coordinators.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Coordinators.podspec; path = ../Coordinators.podspec; sourceTree = "<group>"; };
+		9F9D934BF4CD42A61456FB7A /* Coordinators.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Coordinators.podspec; path = ../Coordinators.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A0D8537C1FC139D000F33ADB /* Coordinators.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Coordinators.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D853851FC13A0800F33ADB /* Coordinators.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Coordinators.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D853861FC13A0E00F33ADB /* Coordinators.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Coordinators.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -296,16 +296,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Coordinators_Tests/Pods-Coordinators_Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
@@ -342,8 +338,6 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Coordinators_Example/Pods-Coordinators_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Coordinators/Coordinators.framework",
@@ -351,8 +345,6 @@
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Coordinators.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",

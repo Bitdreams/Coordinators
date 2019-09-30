@@ -1,9 +1,9 @@
 PODS:
-  - Coordinators (1.0.2):
+  - Coordinators (1.1.0):
     - RxSwift (= 4.4.1)
-  - Nimble (8.0.0)
-  - Quick (2.0.0)
-  - RxAtomic (4.4.1)
+  - Nimble (8.0.4)
+  - Quick (2.2.0)
+  - RxAtomic (4.4.2)
   - RxSwift (4.4.1):
     - RxAtomic (~> 4.4)
 
@@ -13,7 +13,7 @@ DEPENDENCIES:
   - Quick
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - Nimble
     - Quick
     - RxAtomic
@@ -24,12 +24,12 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Coordinators: 68ac2cb0d5c8143ef77c202949caea9ae1e81584
-  Nimble: a0e6f95b4b91a4f66b6da3512b6bebc07c9cbf49
-  Quick: ce1276c7c27ba2da3cb2fd0cde053c3648b3b22d
-  RxAtomic: f8d6adc1ccb87a767811269e4875887bc74dbf19
+  Coordinators: 31862eaab04f91fb363d01355c9c2abe1daff555
+  Nimble: 18d5360282923225d62b09d781f63abc1a0111fc
+  Quick: 7fb19e13be07b5dfb3b90d4f9824c855a11af40e
+  RxAtomic: d00e97c10db88c6f08540e0bf2752fc5a2404167
   RxSwift: 92fcf68dfef21f3e2ab1965363d9e7b3d787597e
 
 PODFILE CHECKSUM: 628a10c352c7281644f51740288952e9cf4b4450
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.8.1
