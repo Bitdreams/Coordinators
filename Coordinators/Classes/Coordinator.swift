@@ -91,6 +91,8 @@ open class UICoordinator: Coordinator {
     
     override open func start(with parent: Coordinator?) {
         super.start(with: parent)
+        (rootViewController as? CNavigationController)?.cViewControllerDelegate = self
+        (rootViewController as? CViewController)?.cViewControllerDelegate = self
         
         if shouldAutomaticallyManageNavigation {
             if hasModalViewController {
@@ -101,6 +103,18 @@ open class UICoordinator: Coordinator {
             }
         }
     }
+}
+
+extension UICoordinator: CViewControllerDelegate {
+    
+    public func cViewControllerWillDismiss(_ viewController: UIViewController) {
+        
+    }
+    
+    public func cViewControllerDidDismiss(_ viewController: UIViewController) {
+        finish(true)
+    }
+    
 }
 
 open class InternalCoordinator: UICoordinator, InternalViewControllerDelegate {
