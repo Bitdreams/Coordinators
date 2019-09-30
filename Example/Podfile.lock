@@ -1,11 +1,9 @@
 PODS:
   - Coordinators (1.1.0):
-    - RxSwift (= 4.4.1)
+    - RxSwift
   - Nimble (8.0.4)
   - Quick (2.2.0)
-  - RxAtomic (4.4.2)
-  - RxSwift (4.4.1):
-    - RxAtomic (~> 4.4)
+  - RxSwift (5.0.0)
 
 DEPENDENCIES:
   - Coordinators (from `../`)
@@ -16,7 +14,6 @@ SPEC REPOS:
   trunk:
     - Nimble
     - Quick
-    - RxAtomic
     - RxSwift
 
 EXTERNAL SOURCES:
@@ -24,11 +21,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Coordinators: 433574a0d6a8171ea266e54a0185c6e7235fdb1a
+  Coordinators: c5ad8c8bec5c47ef733f423ae1fd6ce6e108a738
   Nimble: 18d5360282923225d62b09d781f63abc1a0111fc
   Quick: 7fb19e13be07b5dfb3b90d4f9824c855a11af40e
-  RxAtomic: d00e97c10db88c6f08540e0bf2752fc5a2404167
-  RxSwift: 92fcf68dfef21f3e2ab1965363d9e7b3d787597e
+  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
 
 PODFILE CHECKSUM: 628a10c352c7281644f51740288952e9cf4b4450
 

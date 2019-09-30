@@ -24,7 +24,7 @@
   "frameworks": "UIKit",
   "dependencies": {
     "RxSwift": [
-      "4.4.1"
+
     ]
   },
   "swift_version": "5.0"
