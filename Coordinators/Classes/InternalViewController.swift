@@ -12,7 +12,7 @@ public protocol InternalViewControllerDelegate: class {
     func viewControllerDidDismiss()
 }
 
-open class InternalViewController: UIViewController {
+open class InternalViewController: CViewController {
     public weak var delegate: InternalViewControllerDelegate?
 
     open var navigationBarTintColor: UIColor {

@@ -49,7 +49,7 @@ open class Coordinator: NSObject {
         }
         
         if let parent = parent {
-            let index = parent.childCoordinators.index { $0 === self }!
+            let index = parent.childCoordinators.firstIndex { $0 === self }!
             parent.childCoordinators.remove(at: index)
             parent.childCoordinatorDidFinish(coordinator: self)
         }
