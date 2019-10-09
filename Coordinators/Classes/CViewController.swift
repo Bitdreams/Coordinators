@@ -14,6 +14,17 @@ public protocol CViewControllerDelegate: class {
 
 public protocol CViewControllerProtocol: class {
     var cViewControllerDelegate: CViewControllerDelegate? { get set }
+    func setPresentationControllerDelegate(viewControllerToPresent: UIViewController)
+}
+
+extension CViewControllerProtocol where Self : UIAdaptivePresentationControllerDelegate {
+    
+    public func setPresentationControllerDelegate(viewControllerToPresent: UIViewController) {
+        if viewControllerToPresent is CViewControllerProtocol {
+            viewControllerToPresent.presentationController?.delegate = self
+        }
+    }
+    
 }
 
 open class CViewController: UIViewController, CViewControllerProtocol {
@@ -21,7 +32,7 @@ open class CViewController: UIViewController, CViewControllerProtocol {
     weak public var cViewControllerDelegate: CViewControllerDelegate?
     
     override open func present(_ viewControllerToPresent: UIViewController, animated flag: Bool, completion: (() -> Void)? = nil) {
-        viewControllerToPresent.presentationController?.delegate = self
+        setPresentationControllerDelegate(viewControllerToPresent: viewControllerToPresent)
         super.present(viewControllerToPresent, animated: flag, completion: completion)
     }
     

@@ -12,7 +12,7 @@ open class CNavigationController: UINavigationController, CViewControllerProtoco
     weak public var cViewControllerDelegate: CViewControllerDelegate?
     
     override open func present(_ viewControllerToPresent: UIViewController, animated flag: Bool, completion: (() -> Void)? = nil) {
-        viewControllerToPresent.presentationController?.delegate = self
+        setPresentationControllerDelegate(viewControllerToPresent: viewControllerToPresent)
         super.present(viewControllerToPresent, animated: flag, completion: completion)
     }
     
