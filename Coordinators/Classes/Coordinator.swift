@@ -83,10 +83,6 @@ open class Coordinator: NSObject {
             }.first ?? nil
     }
     
-    open var shouldFinishOnModalDismissal: Bool {
-        return true
-    }
-    
 }
 
 open class UICoordinator: Coordinator {
@@ -106,6 +102,10 @@ open class UICoordinator: Coordinator {
                 navigationController.pushViewController(rootViewController, animated: true)
             }
         }
+    }
+    
+    open var shouldFinishOnModalDismissal: Bool {
+        return true
     }
 }
 
