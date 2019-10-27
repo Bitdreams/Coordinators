@@ -83,6 +83,10 @@ open class Coordinator: NSObject {
             }.first ?? nil
     }
     
+    open var shouldFinishOnModalDismissal: Bool {
+        return true
+    }
+    
 }
 
 open class UICoordinator: Coordinator {
@@ -112,7 +116,9 @@ extension UICoordinator: CViewControllerDelegate {
     }
     
     public func cViewControllerDidDismiss(_ viewController: UIViewController) {
-        finish(true)
+        if shouldFinishOnModalDismissal {
+            finish(true)
+        }
     }
     
 }

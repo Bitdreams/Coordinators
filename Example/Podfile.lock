@@ -1,5 +1,5 @@
 PODS:
-  - Coordinators (1.1.0):
+  - Coordinators (1.1.5):
     - RxSwift
   - Nimble (8.0.4)
   - Quick (2.2.0)
@@ -21,7 +21,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Coordinators: c5ad8c8bec5c47ef733f423ae1fd6ce6e108a738
+  Coordinators: cb844b0bd4d4ccbb7b8f70e625f9c92a8acb2f04
   Nimble: 18d5360282923225d62b09d781f63abc1a0111fc
   Quick: 7fb19e13be07b5dfb3b90d4f9824c855a11af40e
   RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
