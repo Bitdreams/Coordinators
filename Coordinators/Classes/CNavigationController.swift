@@ -21,11 +21,11 @@ open class CNavigationController: UINavigationController, CViewControllerProtoco
 extension CNavigationController: UIAdaptivePresentationControllerDelegate {
     
     public func presentationControllerWillDismiss(_ presentationController: UIPresentationController) {
-        (presentationController.presentedViewController as? CNavigationController)?.cViewControllerDelegate?.cViewControllerWillDismiss(presentationController.presentedViewController)
+        (presentationController.presentedViewController as? CViewControllerProtocol)?.cViewControllerDelegate?.cViewControllerWillDismiss(presentationController.presentedViewController)
     }
     
     public func presentationControllerDidDismiss(_ presentationController: UIPresentationController) {
-        (presentationController.presentedViewController as? CNavigationController)?.cViewControllerDelegate?.cViewControllerDidDismiss(presentationController.presentedViewController)
+        (presentationController.presentedViewController as? CViewControllerProtocol)?.cViewControllerDelegate?.cViewControllerDidDismiss(presentationController.presentedViewController)
     }
     
 }
