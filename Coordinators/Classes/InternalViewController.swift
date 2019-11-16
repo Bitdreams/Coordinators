@@ -15,6 +15,10 @@ public protocol InternalViewControllerDelegate: class {
 open class InternalViewController: CViewController {
     public weak var delegate: InternalViewControllerDelegate?
     
+    open var shouldManageNavigationBarStyle: Bool {
+        return false
+    }
+    
     open var isNavigationBarHidden: Bool {
         return false
     }
@@ -42,21 +46,24 @@ open class InternalViewController: CViewController {
 
     override open func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        navigationController?.isNavigationBarHidden = isNavigationBarHidden
-        navigationController?.navigationBar.barTintColor = navigationBarTintColor
-        navigationController?.navigationBar.tintColor = navigationBarTextTintColor
-        navigationController?.navigationBar.isTranslucent = isNavigationBarTransluscent
-        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: navigationBarTextTintColor]
-        if #available(iOS 11.0, *) {
-            navigationController?.navigationBar.largeTitleTextAttributes = [.foregroundColor: navigationBarTextTintColor]
-        }
+        
+        if shouldManageNavigationBarStyle {
+            navigationController?.isNavigationBarHidden = isNavigationBarHidden
+            navigationController?.navigationBar.barTintColor = navigationBarTintColor
+            navigationController?.navigationBar.tintColor = navigationBarTextTintColor
+            navigationController?.navigationBar.isTranslucent = isNavigationBarTransluscent
+            navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: navigationBarTextTintColor]
+            if #available(iOS 11.0, *) {
+                navigationController?.navigationBar.largeTitleTextAttributes = [.foregroundColor: navigationBarTextTintColor]
+            }
 
-        if isNavigationBarTransluscent {
-            navigationController?.navigationBar.shadowImage = UIImage()
-            navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        } else {
-            navigationController?.navigationBar.shadowImage = UINavigationBar.appearance().shadowImage ?? UIImage()
-            navigationController?.navigationBar.setBackgroundImage(UINavigationBar.appearance().backgroundImage(for: .default), for: .default)
+            if isNavigationBarTransluscent {
+                navigationController?.navigationBar.shadowImage = UIImage()
+                navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+            } else {
+                navigationController?.navigationBar.shadowImage = UINavigationBar.appearance().shadowImage ?? UIImage()
+                navigationController?.navigationBar.setBackgroundImage(UINavigationBar.appearance().backgroundImage(for: .default), for: .default)
+            }
         }
     }
 
