@@ -40,11 +40,11 @@ open class CViewController: UIViewController, CViewControllerProtocol {
 
 extension CViewController: UIAdaptivePresentationControllerDelegate {
     
-    public func presentationControllerWillDismiss(_ presentationController: UIPresentationController) {
+    open func presentationControllerWillDismiss(_ presentationController: UIPresentationController) {
         (presentationController.presentedViewController as? CViewControllerProtocol)?.cViewControllerDelegate?.cViewControllerWillDismiss(presentationController.presentedViewController)
     }
     
-    public func presentationControllerDidDismiss(_ presentationController: UIPresentationController) {
+    open func presentationControllerDidDismiss(_ presentationController: UIPresentationController) {
         (presentationController.presentedViewController as? CViewControllerProtocol)?.cViewControllerDelegate?.cViewControllerDidDismiss(presentationController.presentedViewController)
     }
     
