@@ -1,9 +1,9 @@
 PODS:
-  - Coordinators (1.1.5):
+  - Coordinators (1.1.9):
     - RxSwift
-  - Nimble (8.0.4)
-  - Quick (2.2.0)
-  - RxSwift (5.0.0)
+  - Nimble (9.2.0)
+  - Quick (4.0.0)
+  - RxSwift (6.2.0)
 
 DEPENDENCIES:
   - Coordinators (from `../`)
@@ -21,11 +21,11 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Coordinators: cb844b0bd4d4ccbb7b8f70e625f9c92a8acb2f04
-  Nimble: 18d5360282923225d62b09d781f63abc1a0111fc
-  Quick: 7fb19e13be07b5dfb3b90d4f9824c855a11af40e
-  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  Coordinators: b9e5a7df72728ead2c4d5045d1d6c5944871af07
+  Nimble: 4f4a345c80b503b3ea13606a4f98405974ee4d0b
+  Quick: 6473349e43b9271a8d43839d9ba1c442ed1b7ac4
+  RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
 
 PODFILE CHECKSUM: 628a10c352c7281644f51740288952e9cf4b4450
 
-COCOAPODS: 1.8.1
+COCOAPODS: 1.10.1

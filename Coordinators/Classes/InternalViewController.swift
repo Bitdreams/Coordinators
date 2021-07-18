@@ -8,7 +8,7 @@
 
 import UIKit
 
-public protocol InternalViewControllerDelegate: class {
+public protocol InternalViewControllerDelegate: AnyObject {
     func viewControllerDidDismiss()
 }
 

@@ -7,12 +7,12 @@
 
 import UIKit
 
-public protocol CViewControllerDelegate: class {
+public protocol CViewControllerDelegate: AnyObject {
     func cViewControllerWillDismiss(_ viewController: UIViewController)
     func cViewControllerDidDismiss(_ viewController: UIViewController)
 }
 
-public protocol CViewControllerProtocol: class {
+public protocol CViewControllerProtocol: AnyObject {
     var cViewControllerDelegate: CViewControllerDelegate? { get set }
     func setPresentationControllerDelegate(viewControllerToPresent: UIViewController)
 }
