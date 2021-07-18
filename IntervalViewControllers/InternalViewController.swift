@@ -35,18 +35,21 @@ open class InternalViewController: CViewController {
         return UINavigationBar.appearance().tintColor ?? .white
     }
 
-    override public init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-        super.init(nibName: nil, bundle: nil)
+    public init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init()
+        view.backgroundColor = .white
+    }
+    
+    public override init() {
+        super.init()
         view.backgroundColor = .white
     }
 
     public required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
-    override open func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
+    
+    override func c_viewWillAppear(_ animated: Bool) {
         if shouldManageNavigationBarStyle {
             navigationController?.isNavigationBarHidden = isNavigationBarHidden
             navigationController?.navigationBar.barTintColor = navigationBarTintColor
@@ -66,12 +69,13 @@ open class InternalViewController: CViewController {
             }
         }
     }
-
-    override open func didMove(toParent parent: UIViewController?) {
+    
+    override func c_didMove(toParent parent: UIViewController?) {
         if parent == nil {
             delegate?.viewControllerDidDismiss()
         }
     }
+
 }
 
 

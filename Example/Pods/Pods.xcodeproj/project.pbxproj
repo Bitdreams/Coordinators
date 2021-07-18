@@ -180,6 +180,30 @@
 		9D9AB36A3892895038BF9DB3EEA2C699 /* Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6276C15685BCEDA3454B3DC61E9F35EC /* Debug.swift */; };
 		9F2643593B001BED9C62BEF8FB0EBF9D /* QuickTestSuite.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B97EB9DB7A9C40F462F87CDF75F4D5 /* QuickTestSuite.swift */; };
 		9FA786BD162F8C8B2F51137F0CC4B6D5 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB6DB8386575A0B4C3019343CB83D5B /* Queue.swift */; };
+		A0C7665A26A4BF4D009F05A8 /* Setupable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7665926A4BF4D009F05A8 /* Setupable.swift */; };
+		A0C7665C26A4BF84009F05A8 /* ViewHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7665B26A4BF84009F05A8 /* ViewHolder.swift */; };
+		A0C7665E26A4BFC7009F05A8 /* ViewAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7665D26A4BFC7009F05A8 /* ViewAware.swift */; };
+		A0C7666226A4C3D8009F05A8 /* CHostingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7666126A4C3D8009F05A8 /* CHostingViewController.swift */; };
+		A0C7666626A4C5B9009F05A8 /* ViewModelHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7666526A4C5B9009F05A8 /* ViewModelHolder.swift */; };
+		A0C7666826A4C5ED009F05A8 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7666726A4C5ED009F05A8 /* ViewModel.swift */; };
+		A0C7666A26A4C659009F05A8 /* CViewModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7666926A4C659009F05A8 /* CViewModelViewController.swift */; };
+		A0C7666C26A4C728009F05A8 /* Initializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7666B26A4C728009F05A8 /* Initializable.swift */; };
+		A0C7666E26A4CAE4009F05A8 /* Dequeuable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7666D26A4CAE4009F05A8 /* Dequeuable.swift */; };
+		A0C7667126A4CB2A009F05A8 /* UICollectionView+Dequeuable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7667026A4CB2A009F05A8 /* UICollectionView+Dequeuable.swift */; };
+		A0C7667326A4CB42009F05A8 /* UITableView+Dequeuable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7667226A4CB42009F05A8 /* UITableView+Dequeuable.swift */; };
+		A0C7667626A4CBB1009F05A8 /* CTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7667526A4CBB1009F05A8 /* CTableViewCell.swift */; };
+		A0C7667826A4CD0B009F05A8 /* CCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7667726A4CD0B009F05A8 /* CCollectionViewCell.swift */; };
+		A0C7667A26A4CDBD009F05A8 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7667926A4CDBD009F05A8 /* ListViewModel.swift */; };
+		A0C7667C26A4CFCC009F05A8 /* RxListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7667B26A4CFCC009F05A8 /* RxListViewModel.swift */; };
+		A0C7667E26A4D163009F05A8 /* ScrollViewHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7667D26A4D163009F05A8 /* ScrollViewHolder.swift */; };
+		A0C7668026A4D1BF009F05A8 /* TableViewHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7667F26A4D1BF009F05A8 /* TableViewHolder.swift */; };
+		A0C7668326A4D2C7009F05A8 /* LayoutDistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7668226A4D2C7009F05A8 /* LayoutDistance.swift */; };
+		A0C7668526A4D2EB009F05A8 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7668426A4D2EB009F05A8 /* Layout.swift */; };
+		A0C7668726A4D313009F05A8 /* Layoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7668626A4D313009F05A8 /* Layoutable.swift */; };
+		A0C7668926A4D821009F05A8 /* CTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7668826A4D821009F05A8 /* CTableViewController.swift */; };
+		A0C7668C26A4EAAF009F05A8 /* InternalHostingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7668B26A4EAAF009F05A8 /* InternalHostingViewController.swift */; };
+		A0C7668E26A4EAE7009F05A8 /* InternalViewModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7668D26A4EAE7009F05A8 /* InternalViewModelViewController.swift */; };
+		A0C7669026A4EAFD009F05A8 /* InternalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7668F26A4EAFD009F05A8 /* InternalTableViewController.swift */; };
 		A169C7CDD8C68B1A3B0D06B7FCC863B8 /* CombineLatest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E948F48B60FC6A048D8029A2D2F1784C /* CombineLatest.swift */; };
 		A1D30A36109E6A90E1791B51BAE55A72 /* BeLessThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CF3D09162687F30F9EC062E3FBB51F /* BeLessThan.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		A2E094FD5BEBFC4313FBCC38E81D027A /* AsyncSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE567D7F5CE0FFFA39725885AFA227D1 /* AsyncSubject.swift */; };
@@ -383,7 +407,7 @@
 		1AD933FB0B2467AEC6642661B2C19377 /* NSBundle+CurrentTestBundle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSBundle+CurrentTestBundle.swift"; path = "Sources/Quick/NSBundle+CurrentTestBundle.swift"; sourceTree = "<group>"; };
 		1C112172936D3DE0117D6768584435E4 /* DisposeBag.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DisposeBag.swift; path = RxSwift/Disposables/DisposeBag.swift; sourceTree = "<group>"; };
 		1D46AA6C55C290EE3E96D4362F60E898 /* QuickSpec.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QuickSpec.m; path = Sources/QuickObjectiveC/QuickSpec.m; sourceTree = "<group>"; };
-		1DB3C5070EBD9F27E71FE79D6AB031EC /* InternalViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InternalViewController.swift; path = Coordinators/Classes/InternalViewController.swift; sourceTree = "<group>"; };
+		1DB3C5070EBD9F27E71FE79D6AB031EC /* InternalViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InternalViewController.swift; sourceTree = "<group>"; };
 		1DB6DB8386575A0B4C3019343CB83D5B /* Queue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Queue.swift; path = Platform/DataStructures/Queue.swift; sourceTree = "<group>"; };
 		1DC2517C930DF82684E82A87F4B6965C /* Nimble-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Nimble-umbrella.h"; sourceTree = "<group>"; };
 		1E4CB402AC5965B1CC4D5F8436ADB8CC /* LockOwnerType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LockOwnerType.swift; path = RxSwift/Concurrency/LockOwnerType.swift; sourceTree = "<group>"; };
@@ -566,6 +590,30 @@
 		9E3C471DB88E0CE776397E7141E680FA /* QuickConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickConfiguration.swift; path = Sources/Quick/Configuration/QuickConfiguration.swift; sourceTree = "<group>"; };
 		9F5F8BBBFB83F9D4D83026AD6B15591D /* Pods-Coordinators_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Coordinators_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A08270A9A0825E0C794EAFAB2FBBC6CF /* Cancelable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cancelable.swift; path = RxSwift/Cancelable.swift; sourceTree = "<group>"; };
+		A0C7665926A4BF4D009F05A8 /* Setupable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setupable.swift; sourceTree = "<group>"; };
+		A0C7665B26A4BF84009F05A8 /* ViewHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHolder.swift; sourceTree = "<group>"; };
+		A0C7665D26A4BFC7009F05A8 /* ViewAware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAware.swift; sourceTree = "<group>"; };
+		A0C7666126A4C3D8009F05A8 /* CHostingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHostingViewController.swift; sourceTree = "<group>"; };
+		A0C7666526A4C5B9009F05A8 /* ViewModelHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelHolder.swift; sourceTree = "<group>"; };
+		A0C7666726A4C5ED009F05A8 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		A0C7666926A4C659009F05A8 /* CViewModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CViewModelViewController.swift; sourceTree = "<group>"; };
+		A0C7666B26A4C728009F05A8 /* Initializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Initializable.swift; sourceTree = "<group>"; };
+		A0C7666D26A4CAE4009F05A8 /* Dequeuable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dequeuable.swift; sourceTree = "<group>"; };
+		A0C7667026A4CB2A009F05A8 /* UICollectionView+Dequeuable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Dequeuable.swift"; sourceTree = "<group>"; };
+		A0C7667226A4CB42009F05A8 /* UITableView+Dequeuable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Dequeuable.swift"; sourceTree = "<group>"; };
+		A0C7667526A4CBB1009F05A8 /* CTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTableViewCell.swift; sourceTree = "<group>"; };
+		A0C7667726A4CD0B009F05A8 /* CCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCollectionViewCell.swift; sourceTree = "<group>"; };
+		A0C7667926A4CDBD009F05A8 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		A0C7667B26A4CFCC009F05A8 /* RxListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxListViewModel.swift; sourceTree = "<group>"; };
+		A0C7667D26A4D163009F05A8 /* ScrollViewHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewHolder.swift; sourceTree = "<group>"; };
+		A0C7667F26A4D1BF009F05A8 /* TableViewHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewHolder.swift; sourceTree = "<group>"; };
+		A0C7668226A4D2C7009F05A8 /* LayoutDistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutDistance.swift; sourceTree = "<group>"; };
+		A0C7668426A4D2EB009F05A8 /* Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
+		A0C7668626A4D313009F05A8 /* Layoutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layoutable.swift; sourceTree = "<group>"; };
+		A0C7668826A4D821009F05A8 /* CTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTableViewController.swift; sourceTree = "<group>"; };
+		A0C7668B26A4EAAF009F05A8 /* InternalHostingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalHostingViewController.swift; sourceTree = "<group>"; };
+		A0C7668D26A4EAE7009F05A8 /* InternalViewModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalViewModelViewController.swift; sourceTree = "<group>"; };
+		A0C7668F26A4EAFD009F05A8 /* InternalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalTableViewController.swift; sourceTree = "<group>"; };
 		A1BEBF44120A1C38AAF5172362CF4D98 /* BeginWithPrefix.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeginWithPrefix.swift; path = Sources/Nimble/Matchers/BeginWithPrefix.swift; sourceTree = "<group>"; };
 		A3432A55213636B15D045381469086DB /* QuickTestObservation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickTestObservation.swift; path = Sources/Quick/QuickTestObservation.swift; sourceTree = "<group>"; };
 		A3B6E2850280609466AD1535E8DD16CB /* VirtualTimeScheduler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VirtualTimeScheduler.swift; path = RxSwift/Schedulers/VirtualTimeScheduler.swift; sourceTree = "<group>"; };
@@ -726,12 +774,18 @@
 		01200E950B4722E1F608891D71CB5290 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				A0C7668A26A4EA8F009F05A8 /* IntervalViewControllers */,
+				A0C7667426A4CBA1009F05A8 /* Views */,
+				A0C7666F26A4CB11009F05A8 /* Extensions */,
+				A0C7665826A4BF3B009F05A8 /* Protocols */,
 				F0CF6EDD9DE9EA4D1BFA7B005DFDC468 /* CNavigationController.swift */,
 				6C0307C3132CA3C9D6CA198086BAB7E5 /* Coordinator.swift */,
 				754B5F0FD80339A5A1866C453B5B8075 /* CViewController.swift */,
-				1DB3C5070EBD9F27E71FE79D6AB031EC /* InternalViewController.swift */,
 				3E5345A59FCBF056896223D2FA592C06 /* Pod */,
 				9C9DD9871EA2FF11D9F5A3985B8F7744 /* Support Files */,
+				A0C7666126A4C3D8009F05A8 /* CHostingViewController.swift */,
+				A0C7666926A4C659009F05A8 /* CViewModelViewController.swift */,
+				A0C7668826A4D821009F05A8 /* CTableViewController.swift */,
 			);
 			name = Coordinators;
 			path = ../..;
@@ -877,6 +931,56 @@
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/Coordinators";
+			sourceTree = "<group>";
+		};
+		A0C7665826A4BF3B009F05A8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A0C7665926A4BF4D009F05A8 /* Setupable.swift */,
+				A0C7665B26A4BF84009F05A8 /* ViewHolder.swift */,
+				A0C7665D26A4BFC7009F05A8 /* ViewAware.swift */,
+				A0C7666526A4C5B9009F05A8 /* ViewModelHolder.swift */,
+				A0C7666726A4C5ED009F05A8 /* ViewModel.swift */,
+				A0C7666B26A4C728009F05A8 /* Initializable.swift */,
+				A0C7666D26A4CAE4009F05A8 /* Dequeuable.swift */,
+				A0C7667926A4CDBD009F05A8 /* ListViewModel.swift */,
+				A0C7667B26A4CFCC009F05A8 /* RxListViewModel.swift */,
+				A0C7667D26A4D163009F05A8 /* ScrollViewHolder.swift */,
+				A0C7667F26A4D1BF009F05A8 /* TableViewHolder.swift */,
+				A0C7668226A4D2C7009F05A8 /* LayoutDistance.swift */,
+				A0C7668426A4D2EB009F05A8 /* Layout.swift */,
+				A0C7668626A4D313009F05A8 /* Layoutable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		A0C7666F26A4CB11009F05A8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A0C7667026A4CB2A009F05A8 /* UICollectionView+Dequeuable.swift */,
+				A0C7667226A4CB42009F05A8 /* UITableView+Dequeuable.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A0C7667426A4CBA1009F05A8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A0C7667526A4CBB1009F05A8 /* CTableViewCell.swift */,
+				A0C7667726A4CD0B009F05A8 /* CCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A0C7668A26A4EA8F009F05A8 /* IntervalViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1DB3C5070EBD9F27E71FE79D6AB031EC /* InternalViewController.swift */,
+				A0C7668B26A4EAAF009F05A8 /* InternalHostingViewController.swift */,
+				A0C7668D26A4EAE7009F05A8 /* InternalViewModelViewController.swift */,
+				A0C7668F26A4EAFD009F05A8 /* InternalTableViewController.swift */,
+			);
+			path = IntervalViewControllers;
 			sourceTree = "<group>";
 		};
 		A77D0201B640564105D4C1B12A6A97F5 /* Pods */ = {
@@ -1460,11 +1564,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0C7667626A4CBB1009F05A8 /* CTableViewCell.swift in Sources */,
+				A0C7668C26A4EAAF009F05A8 /* InternalHostingViewController.swift in Sources */,
+				A0C7669026A4EAFD009F05A8 /* InternalTableViewController.swift in Sources */,
 				E1D40C8E74FE381364A99079EB6974B9 /* CNavigationController.swift in Sources */,
+				A0C7668726A4D313009F05A8 /* Layoutable.swift in Sources */,
+				A0C7665C26A4BF84009F05A8 /* ViewHolder.swift in Sources */,
+				A0C7668326A4D2C7009F05A8 /* LayoutDistance.swift in Sources */,
+				A0C7667C26A4CFCC009F05A8 /* RxListViewModel.swift in Sources */,
+				A0C7668526A4D2EB009F05A8 /* Layout.swift in Sources */,
+				A0C7666C26A4C728009F05A8 /* Initializable.swift in Sources */,
 				929F51B6F5136A4C827661623320FF43 /* Coordinator.swift in Sources */,
+				A0C7666A26A4C659009F05A8 /* CViewModelViewController.swift in Sources */,
+				A0C7668026A4D1BF009F05A8 /* TableViewHolder.swift in Sources */,
+				A0C7666826A4C5ED009F05A8 /* ViewModel.swift in Sources */,
+				A0C7667E26A4D163009F05A8 /* ScrollViewHolder.swift in Sources */,
+				A0C7666226A4C3D8009F05A8 /* CHostingViewController.swift in Sources */,
+				A0C7666626A4C5B9009F05A8 /* ViewModelHolder.swift in Sources */,
 				B33893A5526EF5D7C9B65DEF827EA78C /* Coordinators-dummy.m in Sources */,
 				CF9AF4B521AE2CDFECE8058B641B237C /* CViewController.swift in Sources */,
+				A0C7668926A4D821009F05A8 /* CTableViewController.swift in Sources */,
+				A0C7667326A4CB42009F05A8 /* UITableView+Dequeuable.swift in Sources */,
+				A0C7667826A4CD0B009F05A8 /* CCollectionViewCell.swift in Sources */,
+				A0C7666E26A4CAE4009F05A8 /* Dequeuable.swift in Sources */,
+				A0C7665E26A4BFC7009F05A8 /* ViewAware.swift in Sources */,
+				A0C7667A26A4CDBD009F05A8 /* ListViewModel.swift in Sources */,
+				A0C7668E26A4EAE7009F05A8 /* InternalViewModelViewController.swift in Sources */,
 				1A34529D8DB9197C3BE4FCB8CCDBBEBB /* InternalViewController.swift in Sources */,
+				A0C7665A26A4BF4D009F05A8 /* Setupable.swift in Sources */,
+				A0C7667126A4CB2A009F05A8 /* UICollectionView+Dequeuable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
