@@ -83,12 +83,7 @@ class View: UIView, TableViewHolder, Layoutable {
         
         addSubview(tableView)
         
-        tableView.translatesAutoresizingMaskIntoConstraints = false
-        
-        NSLayoutConstraint(item: tableView, attribute: .top, relatedBy: .equal, toItem: self, attribute: .top, multiplier: 1, constant: 0).isActive = true
-        NSLayoutConstraint(item: tableView, attribute: .left, relatedBy: .equal, toItem: self, attribute: .left, multiplier: 1, constant: 0).isActive = true
-        NSLayoutConstraint(item: tableView, attribute: .right, relatedBy: .equal, toItem: self, attribute: .right, multiplier: 1, constant: 0).isActive = true
-        NSLayoutConstraint(item: tableView, attribute: .bottom, relatedBy: .equal, toItem: self, attribute: .bottom, multiplier: 1, constant: 0).isActive = true
+        tableView.fillSuperview()
     }
     
     required init?(coder: NSCoder) {
@@ -110,9 +105,16 @@ class Cell: CTableViewCell<Fruit> {
 class ViewController: CTableViewController<View, FruitListViewModel, Cell>, Layoutable {
     
     typealias Layout = HeaderLayout
+    
     override init(viewModel: FruitListViewModel = FruitListViewModel()) {
         super.init(viewModel: viewModel)
         title = "Fruit list"
+    }
+    
+    override func setup() {
+        super.setup()
+        
+        tableView.delegate = self
     }
     
     override func viewDidLayoutSubviews() {
@@ -128,3 +130,12 @@ class ViewController: CTableViewController<View, FruitListViewModel, Cell>, Layo
 
 }
 
+extension ViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        navigationController?.pushViewController(TextViewController(), animated: true)
+    }
+    
+    
+}

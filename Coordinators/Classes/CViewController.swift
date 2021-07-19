@@ -27,9 +27,11 @@ extension CViewControllerProtocol where Self : UIAdaptivePresentationControllerD
     
 }
 
-open class CViewController: UIViewController, CViewControllerProtocol, ViewAware {
+open class CViewController: UIViewController, CViewControllerProtocol, ViewAware, KeyboardStateObserverDelegate {
 
     weak public var cViewControllerDelegate: CViewControllerDelegate?
+    
+    public let keyboardStateObserver = KeyboardStateObserver()
     
     public init() {
         super.init(nibName: nil, bundle: nil)
@@ -49,6 +51,7 @@ open class CViewController: UIViewController, CViewControllerProtocol, ViewAware
     
     open override func viewDidLoad() {
         super.viewDidLoad()
+        keyboardStateObserver.delegate = self
         setup()
     }
     
@@ -56,6 +59,14 @@ open class CViewController: UIViewController, CViewControllerProtocol, ViewAware
         super.viewWillAppear(animated)
         
         c_viewWillAppear(animated)
+        
+        keyboardStateObserver.startObserving()
+    }
+    
+    open override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+        keyboardStateObserver.stopObserving()
     }
 
     override open func didMove(toParent parent: UIViewController?) {
@@ -81,6 +92,24 @@ open class CViewController: UIViewController, CViewControllerProtocol, ViewAware
     
     open func setupLayout() {
         // To be overriden
+    }
+    
+    // MARK: Keyboard
+    
+    open func keyBoardWillShow(endframe: CGRect?) {
+        // Not implemented here
+    }
+    
+    open func keyboardDidShow(endframe: CGRect?) {
+        // Not implemented here
+    }
+    
+    open func keyboardWillHide(endframe: CGRect?) {
+        // Not implemented here
+    }
+    
+    open func keyboardDidHide(endframe: CGRect?) {
+        // Not implemented here
     }
     
     // MARK Internal

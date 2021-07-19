@@ -7,7 +7,7 @@
 
 import UIKit
 
-public protocol TableViewHolder: ScrolViewHolder {
+public protocol TableViewHolder: ScrollViewHolder {
     var tableView: UITableView { get }
     
     func add(tableHeaderView view: UIView)
