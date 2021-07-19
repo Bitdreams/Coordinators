@@ -49,22 +49,13 @@ class FruitListViewModel: ListViewModel {
     
 }
 
-struct HeaderDistances: LayoutDistances {
-    static var small: CGFloat = 4
-    
-    static var medium: CGFloat = 8
-    
-    static var large: CGFloat = 16
-    
-    static var xlarge: CGFloat = 32
-}
 
 struct HeaderLayout: Layout {
     
     var insets = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
     
-    var margin: LayoutDistances.Type = HeaderDistances.self
-    var spacing: LayoutDistances.Type = HeaderDistances.self
+    var margin: LayoutDistances.Type = CommonDistances.self
+    var spacing: LayoutDistances.Type = CommonDistances.self
     
     init() {
         
@@ -134,7 +125,7 @@ extension ViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        navigationController?.pushViewController(TextViewController(), animated: true)
+        navigationController?.pushViewController(StackViewController(), animated: true)
     }
     
     

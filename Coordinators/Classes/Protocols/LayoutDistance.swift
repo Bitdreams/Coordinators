@@ -8,8 +8,11 @@
 import Foundation
 
 public protocol LayoutDistances {
+    static var none: CGFloat { get }
     static var small: CGFloat { get }
     static var medium: CGFloat { get }
+    static var normal: CGFloat { get }
     static var large: CGFloat { get }
     static var xlarge: CGFloat { get }
+    static var xxlarge: CGFloat { get }
 }

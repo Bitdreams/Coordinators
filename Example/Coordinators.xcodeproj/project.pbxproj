@@ -18,6 +18,7 @@
 		A0C7666026A4C173009F05A8 /* CViewControllerSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7665F26A4C173009F05A8 /* CViewControllerSpecs.swift */; };
 		A0C7666426A4C45E009F05A8 /* CHostingViewControllerSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7666326A4C45E009F05A8 /* CHostingViewControllerSpecs.swift */; };
 		A0C766C926A5919C009F05A8 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C766C826A5919C009F05A8 /* TextViewController.swift */; };
+		A0C7672826A60051009F05A8 /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7672726A60051009F05A8 /* StackViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		A0C7665F26A4C173009F05A8 /* CViewControllerSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CViewControllerSpecs.swift; sourceTree = "<group>"; };
 		A0C7666326A4C45E009F05A8 /* CHostingViewControllerSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHostingViewControllerSpecs.swift; sourceTree = "<group>"; };
 		A0C766C826A5919C009F05A8 /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
+		A0C7672726A60051009F05A8 /* StackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewController.swift; sourceTree = "<group>"; };
 		A0D8537C1FC139D000F33ADB /* Coordinators.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Coordinators.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D853851FC13A0800F33ADB /* Coordinators.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Coordinators.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D853861FC13A0E00F33ADB /* Coordinators.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Coordinators.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,6 +123,7 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				A0C7672726A60051009F05A8 /* StackViewController.swift */,
 			);
 			name = "Example for Coordinators";
 			path = Coordinators;
@@ -370,6 +373,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				A0C7672826A60051009F05A8 /* StackViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				A0C766C926A5919C009F05A8 /* TextViewController.swift in Sources */,
 			);

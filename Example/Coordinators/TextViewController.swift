@@ -42,4 +42,8 @@ class TextView: UIView, ScrollViewHolder {
 
 class TextViewController: CScrollViewController<TextView> {
     
+    override var scrollViewKeyboardAdjustment: ScrollViewKeyboardAdjustment {
+        return .bottomConstraint
+    }
+    
 }

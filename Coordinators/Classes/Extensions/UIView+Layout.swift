@@ -15,7 +15,7 @@ public extension UIView {
         case safeArea
     }
     
-    func fillSuperview(margingType: LayoutMarginType = .none) {
+    func fillSuperview(margingType: LayoutMarginType = .none, insets: UIEdgeInsets = .zero) {
         guard let superview = superview else {
             preconditionFailure("Superview cannor be nil")
         }
@@ -44,10 +44,10 @@ public extension UIView {
         }
         
         translatesAutoresizingMaskIntoConstraints = false
-        topAnchor.constraint(equalTo: _topAnchor).isActive = true
-        bottomAnchor.constraint(equalTo: _bottomAnchor).isActive = true
-        leftAnchor.constraint(equalTo: _leftAnchor).isActive = true
-        rightAnchor.constraint(equalTo: _rightAnchor).isActive = true
+        topAnchor.constraint(equalTo: _topAnchor, constant: insets.top).isActive = true
+        bottomAnchor.constraint(equalTo: _bottomAnchor, constant: -insets.bottom).isActive = true
+        leftAnchor.constraint(equalTo: _leftAnchor, constant: insets.left).isActive = true
+        rightAnchor.constraint(equalTo: _rightAnchor, constant: -insets.right).isActive = true
     }
     
 }

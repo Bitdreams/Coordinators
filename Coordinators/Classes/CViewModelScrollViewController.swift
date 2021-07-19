@@ -1,5 +1,5 @@
 //
-//  InternalScrollViewController.swift
+//  CViewModelScrollViewController.swift
 //  Coordinators
 //
 //  Created by Raphael Cruzeiro on 19/07/2021.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-open class InternalScrollViewController<V: UIView & ScrollViewHolder>: InternalHostingViewController<V> {
+open class CViewModelScrollViewController<V: UIView & ScrollViewHolder, VM: ViewModel>: CViewModelViewController<V, VM> {
     
     let keyboardAnimationTime: TimeInterval = 0.3
     
@@ -59,3 +59,4 @@ open class InternalScrollViewController<V: UIView & ScrollViewHolder>: InternalH
     }
     
 }
+

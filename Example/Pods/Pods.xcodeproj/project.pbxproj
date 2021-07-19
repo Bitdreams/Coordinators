@@ -179,35 +179,39 @@
 		9D9AB36A3892895038BF9DB3EEA2C699 /* Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6276C15685BCEDA3454B3DC61E9F35EC /* Debug.swift */; };
 		9F2643593B001BED9C62BEF8FB0EBF9D /* QuickTestSuite.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B97EB9DB7A9C40F462F87CDF75F4D5 /* QuickTestSuite.swift */; };
 		9FA786BD162F8C8B2F51137F0CC4B6D5 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB6DB8386575A0B4C3019343CB83D5B /* Queue.swift */; };
-		A0C7669526A4ED03009F05A8 /* InternalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7669126A4ED03009F05A8 /* InternalViewController.swift */; };
-		A0C7669626A4ED03009F05A8 /* InternalHostingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7669226A4ED03009F05A8 /* InternalHostingViewController.swift */; };
-		A0C7669726A4ED03009F05A8 /* InternalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7669326A4ED03009F05A8 /* InternalTableViewController.swift */; };
-		A0C7669826A4ED03009F05A8 /* InternalViewModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7669426A4ED03009F05A8 /* InternalViewModelViewController.swift */; };
-		A0C7669B26A4ED10009F05A8 /* CTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7669926A4ED10009F05A8 /* CTableViewCell.swift */; };
-		A0C7669C26A4ED10009F05A8 /* CCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7669A26A4ED10009F05A8 /* CCollectionViewCell.swift */; };
-		A0C7669F26A4ED1D009F05A8 /* UICollectionView+Dequeuable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7669D26A4ED1D009F05A8 /* UICollectionView+Dequeuable.swift */; };
-		A0C766A026A4ED1D009F05A8 /* UITableView+Dequeuable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7669E26A4ED1D009F05A8 /* UITableView+Dequeuable.swift */; };
-		A0C766AF26A4ED2A009F05A8 /* ViewModelHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C766A126A4ED2A009F05A8 /* ViewModelHolder.swift */; };
-		A0C766B026A4ED2A009F05A8 /* ViewHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C766A226A4ED2A009F05A8 /* ViewHolder.swift */; };
-		A0C766B126A4ED2A009F05A8 /* ScrollViewHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C766A326A4ED2A009F05A8 /* ScrollViewHolder.swift */; };
-		A0C766B226A4ED2A009F05A8 /* Dequeuable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C766A426A4ED2A009F05A8 /* Dequeuable.swift */; };
-		A0C766B326A4ED2A009F05A8 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C766A526A4ED2A009F05A8 /* ListViewModel.swift */; };
-		A0C766B426A4ED2A009F05A8 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C766A626A4ED2A009F05A8 /* Layout.swift */; };
-		A0C766B526A4ED2A009F05A8 /* Initializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C766A726A4ED2A009F05A8 /* Initializable.swift */; };
-		A0C766B626A4ED2A009F05A8 /* LayoutDistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C766A826A4ED2A009F05A8 /* LayoutDistance.swift */; };
-		A0C766B726A4ED2A009F05A8 /* ViewAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C766A926A4ED2A009F05A8 /* ViewAware.swift */; };
-		A0C766B826A4ED2A009F05A8 /* TableViewHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C766AA26A4ED2A009F05A8 /* TableViewHolder.swift */; };
-		A0C766B926A4ED2A009F05A8 /* RxListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C766AB26A4ED2A009F05A8 /* RxListViewModel.swift */; };
-		A0C766BA26A4ED2A009F05A8 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C766AC26A4ED2A009F05A8 /* ViewModel.swift */; };
-		A0C766BB26A4ED2A009F05A8 /* Setupable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C766AD26A4ED2A009F05A8 /* Setupable.swift */; };
-		A0C766BC26A4ED2A009F05A8 /* Layoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C766AE26A4ED2A009F05A8 /* Layoutable.swift */; };
 		A0C766C026A4EEA2009F05A8 /* CTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C766BD26A4EEA2009F05A8 /* CTableViewController.swift */; };
 		A0C766C126A4EEA2009F05A8 /* CHostingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C766BE26A4EEA2009F05A8 /* CHostingViewController.swift */; };
 		A0C766C226A4EEA2009F05A8 /* CViewModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C766BF26A4EEA2009F05A8 /* CViewModelViewController.swift */; };
-		A0C766CB26A5999F009F05A8 /* InternalScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C766CA26A5999F009F05A8 /* InternalScrollViewController.swift */; };
-		A0C766CD26A59A0F009F05A8 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C766CC26A59A0F009F05A8 /* UIView+Layout.swift */; };
 		A0C766D126A59C14009F05A8 /* CScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C766D026A59C14009F05A8 /* CScrollViewController.swift */; };
 		A0C766D526A5AAB2009F05A8 /* CNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C766D426A5AAB1009F05A8 /* CNavigationController.swift */; };
+		A0C766D926A5F334009F05A8 /* ScrollViewKeyboardAdjustment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C766D826A5F334009F05A8 /* ScrollViewKeyboardAdjustment.swift */; };
+		A0C766DD26A5F70B009F05A8 /* CViewModelScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C766DC26A5F70B009F05A8 /* CViewModelScrollViewController.swift */; };
+		A0C7670C26A5FF56009F05A8 /* InternalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C766EE26A5FF55009F05A8 /* InternalTableViewController.swift */; };
+		A0C7670D26A5FF56009F05A8 /* InternalViewModelScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C766EF26A5FF55009F05A8 /* InternalViewModelScrollViewController.swift */; };
+		A0C7670E26A5FF56009F05A8 /* InternalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C766F026A5FF55009F05A8 /* InternalViewController.swift */; };
+		A0C7670F26A5FF56009F05A8 /* InternalViewModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C766F126A5FF55009F05A8 /* InternalViewModelViewController.swift */; };
+		A0C7671026A5FF56009F05A8 /* InternalHostingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C766F226A5FF55009F05A8 /* InternalHostingViewController.swift */; };
+		A0C7671126A5FF56009F05A8 /* UITableView+Dequeuable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C766F426A5FF56009F05A8 /* UITableView+Dequeuable.swift */; };
+		A0C7671226A5FF56009F05A8 /* UICollectionView+Dequeuable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C766F526A5FF56009F05A8 /* UICollectionView+Dequeuable.swift */; };
+		A0C7671326A5FF56009F05A8 /* CommonLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C766F826A5FF56009F05A8 /* CommonLayout.swift */; };
+		A0C7671426A5FF56009F05A8 /* ViewModelHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C766FA26A5FF56009F05A8 /* ViewModelHolder.swift */; };
+		A0C7671526A5FF56009F05A8 /* RxListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C766FB26A5FF56009F05A8 /* RxListViewModel.swift */; };
+		A0C7671626A5FF56009F05A8 /* Initializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C766FC26A5FF56009F05A8 /* Initializable.swift */; };
+		A0C7671726A5FF56009F05A8 /* Dequeuable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C766FD26A5FF56009F05A8 /* Dequeuable.swift */; };
+		A0C7671826A5FF56009F05A8 /* Layoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C766FE26A5FF56009F05A8 /* Layoutable.swift */; };
+		A0C7671926A5FF56009F05A8 /* TableViewHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C766FF26A5FF56009F05A8 /* TableViewHolder.swift */; };
+		A0C7671A26A5FF56009F05A8 /* LayoutDistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7670026A5FF56009F05A8 /* LayoutDistance.swift */; };
+		A0C7671B26A5FF56009F05A8 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7670126A5FF56009F05A8 /* ViewModel.swift */; };
+		A0C7671C26A5FF56009F05A8 /* Setupable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7670226A5FF56009F05A8 /* Setupable.swift */; };
+		A0C7671D26A5FF56009F05A8 /* ScrollViewHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7670326A5FF56009F05A8 /* ScrollViewHolder.swift */; };
+		A0C7671E26A5FF56009F05A8 /* ViewAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7670426A5FF56009F05A8 /* ViewAware.swift */; };
+		A0C7671F26A5FF56009F05A8 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7670526A5FF56009F05A8 /* ListViewModel.swift */; };
+		A0C7672026A5FF56009F05A8 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7670626A5FF56009F05A8 /* Layout.swift */; };
+		A0C7672126A5FF56009F05A8 /* ViewHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7670726A5FF56009F05A8 /* ViewHolder.swift */; };
+		A0C7672226A5FF56009F05A8 /* CCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7670926A5FF56009F05A8 /* CCollectionViewCell.swift */; };
+		A0C7672326A5FF56009F05A8 /* CTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7670A26A5FF56009F05A8 /* CTableViewCell.swift */; };
+		A0C7672426A5FF56009F05A8 /* ScrollableVStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7670B26A5FF56009F05A8 /* ScrollableVStack.swift */; };
+		A0C7672626A5FFD7009F05A8 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C7672526A5FFD7009F05A8 /* UIView+Layout.swift */; };
 		A169C7CDD8C68B1A3B0D06B7FCC863B8 /* CombineLatest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E948F48B60FC6A048D8029A2D2F1784C /* CombineLatest.swift */; };
 		A1D30A36109E6A90E1791B51BAE55A72 /* BeLessThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CF3D09162687F30F9EC062E3FBB51F /* BeLessThan.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		A2E094FD5BEBFC4313FBCC38E81D027A /* AsyncSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE567D7F5CE0FFFA39725885AFA227D1 /* AsyncSubject.swift */; };
@@ -593,35 +597,39 @@
 		9E3C471DB88E0CE776397E7141E680FA /* QuickConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickConfiguration.swift; path = Sources/Quick/Configuration/QuickConfiguration.swift; sourceTree = "<group>"; };
 		9F5F8BBBFB83F9D4D83026AD6B15591D /* Pods-Coordinators_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Coordinators_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A08270A9A0825E0C794EAFAB2FBBC6CF /* Cancelable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cancelable.swift; path = RxSwift/Cancelable.swift; sourceTree = "<group>"; };
-		A0C7669126A4ED03009F05A8 /* InternalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InternalViewController.swift; path = ../Coordinators/Classes/IntervalViewControllers/InternalViewController.swift; sourceTree = "<group>"; };
-		A0C7669226A4ED03009F05A8 /* InternalHostingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InternalHostingViewController.swift; path = ../Coordinators/Classes/IntervalViewControllers/InternalHostingViewController.swift; sourceTree = "<group>"; };
-		A0C7669326A4ED03009F05A8 /* InternalTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InternalTableViewController.swift; path = ../Coordinators/Classes/IntervalViewControllers/InternalTableViewController.swift; sourceTree = "<group>"; };
-		A0C7669426A4ED03009F05A8 /* InternalViewModelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InternalViewModelViewController.swift; path = ../Coordinators/Classes/IntervalViewControllers/InternalViewModelViewController.swift; sourceTree = "<group>"; };
-		A0C7669926A4ED10009F05A8 /* CTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CTableViewCell.swift; path = ../Coordinators/Classes/Views/CTableViewCell.swift; sourceTree = "<group>"; };
-		A0C7669A26A4ED10009F05A8 /* CCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CCollectionViewCell.swift; path = ../Coordinators/Classes/Views/CCollectionViewCell.swift; sourceTree = "<group>"; };
-		A0C7669D26A4ED1D009F05A8 /* UICollectionView+Dequeuable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UICollectionView+Dequeuable.swift"; path = "../Coordinators/Classes/Extensions/UICollectionView+Dequeuable.swift"; sourceTree = "<group>"; };
-		A0C7669E26A4ED1D009F05A8 /* UITableView+Dequeuable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UITableView+Dequeuable.swift"; path = "../Coordinators/Classes/Extensions/UITableView+Dequeuable.swift"; sourceTree = "<group>"; };
-		A0C766A126A4ED2A009F05A8 /* ViewModelHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewModelHolder.swift; path = ../Coordinators/Classes/Protocols/ViewModelHolder.swift; sourceTree = "<group>"; };
-		A0C766A226A4ED2A009F05A8 /* ViewHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewHolder.swift; path = ../Coordinators/Classes/Protocols/ViewHolder.swift; sourceTree = "<group>"; };
-		A0C766A326A4ED2A009F05A8 /* ScrollViewHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScrollViewHolder.swift; path = ../Coordinators/Classes/Protocols/ScrollViewHolder.swift; sourceTree = "<group>"; };
-		A0C766A426A4ED2A009F05A8 /* Dequeuable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dequeuable.swift; path = ../Coordinators/Classes/Protocols/Dequeuable.swift; sourceTree = "<group>"; };
-		A0C766A526A4ED2A009F05A8 /* ListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListViewModel.swift; path = ../Coordinators/Classes/Protocols/ListViewModel.swift; sourceTree = "<group>"; };
-		A0C766A626A4ED2A009F05A8 /* Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Layout.swift; path = ../Coordinators/Classes/Protocols/Layout.swift; sourceTree = "<group>"; };
-		A0C766A726A4ED2A009F05A8 /* Initializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Initializable.swift; path = ../Coordinators/Classes/Protocols/Initializable.swift; sourceTree = "<group>"; };
-		A0C766A826A4ED2A009F05A8 /* LayoutDistance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LayoutDistance.swift; path = ../Coordinators/Classes/Protocols/LayoutDistance.swift; sourceTree = "<group>"; };
-		A0C766A926A4ED2A009F05A8 /* ViewAware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewAware.swift; path = ../Coordinators/Classes/Protocols/ViewAware.swift; sourceTree = "<group>"; };
-		A0C766AA26A4ED2A009F05A8 /* TableViewHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewHolder.swift; path = ../Coordinators/Classes/Protocols/TableViewHolder.swift; sourceTree = "<group>"; };
-		A0C766AB26A4ED2A009F05A8 /* RxListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RxListViewModel.swift; path = ../Coordinators/Classes/Protocols/RxListViewModel.swift; sourceTree = "<group>"; };
-		A0C766AC26A4ED2A009F05A8 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewModel.swift; path = ../Coordinators/Classes/Protocols/ViewModel.swift; sourceTree = "<group>"; };
-		A0C766AD26A4ED2A009F05A8 /* Setupable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Setupable.swift; path = ../Coordinators/Classes/Protocols/Setupable.swift; sourceTree = "<group>"; };
-		A0C766AE26A4ED2A009F05A8 /* Layoutable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Layoutable.swift; path = ../Coordinators/Classes/Protocols/Layoutable.swift; sourceTree = "<group>"; };
 		A0C766BD26A4EEA2009F05A8 /* CTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CTableViewController.swift; path = Coordinators/Classes/CTableViewController.swift; sourceTree = "<group>"; };
 		A0C766BE26A4EEA2009F05A8 /* CHostingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CHostingViewController.swift; path = Coordinators/Classes/CHostingViewController.swift; sourceTree = "<group>"; };
 		A0C766BF26A4EEA2009F05A8 /* CViewModelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CViewModelViewController.swift; path = Coordinators/Classes/CViewModelViewController.swift; sourceTree = "<group>"; };
-		A0C766CA26A5999F009F05A8 /* InternalScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InternalScrollViewController.swift; path = ../Example/Coordinators/InternalScrollViewController.swift; sourceTree = "<group>"; };
-		A0C766CC26A59A0F009F05A8 /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIView+Layout.swift"; path = "../Example/Coordinators/UIView+Layout.swift"; sourceTree = "<group>"; };
 		A0C766D026A59C14009F05A8 /* CScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CScrollViewController.swift; path = Coordinators/Classes/CScrollViewController.swift; sourceTree = "<group>"; };
 		A0C766D426A5AAB1009F05A8 /* CNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CNavigationController.swift; path = Coordinators/Classes/CNavigationController.swift; sourceTree = "<group>"; };
+		A0C766D826A5F334009F05A8 /* ScrollViewKeyboardAdjustment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScrollViewKeyboardAdjustment.swift; path = Coordinators/Classes/ScrollViewKeyboardAdjustment.swift; sourceTree = "<group>"; };
+		A0C766DC26A5F70B009F05A8 /* CViewModelScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CViewModelScrollViewController.swift; path = Coordinators/Classes/CViewModelScrollViewController.swift; sourceTree = "<group>"; };
+		A0C766EE26A5FF55009F05A8 /* InternalTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternalTableViewController.swift; sourceTree = "<group>"; };
+		A0C766EF26A5FF55009F05A8 /* InternalViewModelScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternalViewModelScrollViewController.swift; sourceTree = "<group>"; };
+		A0C766F026A5FF55009F05A8 /* InternalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternalViewController.swift; sourceTree = "<group>"; };
+		A0C766F126A5FF55009F05A8 /* InternalViewModelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternalViewModelViewController.swift; sourceTree = "<group>"; };
+		A0C766F226A5FF55009F05A8 /* InternalHostingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternalHostingViewController.swift; sourceTree = "<group>"; };
+		A0C766F426A5FF56009F05A8 /* UITableView+Dequeuable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Dequeuable.swift"; sourceTree = "<group>"; };
+		A0C766F526A5FF56009F05A8 /* UICollectionView+Dequeuable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Dequeuable.swift"; sourceTree = "<group>"; };
+		A0C766F826A5FF56009F05A8 /* CommonLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonLayout.swift; sourceTree = "<group>"; };
+		A0C766FA26A5FF56009F05A8 /* ViewModelHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelHolder.swift; sourceTree = "<group>"; };
+		A0C766FB26A5FF56009F05A8 /* RxListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxListViewModel.swift; sourceTree = "<group>"; };
+		A0C766FC26A5FF56009F05A8 /* Initializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Initializable.swift; sourceTree = "<group>"; };
+		A0C766FD26A5FF56009F05A8 /* Dequeuable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dequeuable.swift; sourceTree = "<group>"; };
+		A0C766FE26A5FF56009F05A8 /* Layoutable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Layoutable.swift; sourceTree = "<group>"; };
+		A0C766FF26A5FF56009F05A8 /* TableViewHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewHolder.swift; sourceTree = "<group>"; };
+		A0C7670026A5FF56009F05A8 /* LayoutDistance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutDistance.swift; sourceTree = "<group>"; };
+		A0C7670126A5FF56009F05A8 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		A0C7670226A5FF56009F05A8 /* Setupable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Setupable.swift; sourceTree = "<group>"; };
+		A0C7670326A5FF56009F05A8 /* ScrollViewHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewHolder.swift; sourceTree = "<group>"; };
+		A0C7670426A5FF56009F05A8 /* ViewAware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAware.swift; sourceTree = "<group>"; };
+		A0C7670526A5FF56009F05A8 /* ListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		A0C7670626A5FF56009F05A8 /* Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
+		A0C7670726A5FF56009F05A8 /* ViewHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewHolder.swift; sourceTree = "<group>"; };
+		A0C7670926A5FF56009F05A8 /* CCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCollectionViewCell.swift; sourceTree = "<group>"; };
+		A0C7670A26A5FF56009F05A8 /* CTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTableViewCell.swift; sourceTree = "<group>"; };
+		A0C7670B26A5FF56009F05A8 /* ScrollableVStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollableVStack.swift; sourceTree = "<group>"; };
+		A0C7672526A5FFD7009F05A8 /* UIView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
 		A1BEBF44120A1C38AAF5172362CF4D98 /* BeginWithPrefix.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeginWithPrefix.swift; path = Sources/Nimble/Matchers/BeginWithPrefix.swift; sourceTree = "<group>"; };
 		A3432A55213636B15D045381469086DB /* QuickTestObservation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickTestObservation.swift; path = Sources/Quick/QuickTestObservation.swift; sourceTree = "<group>"; };
 		A3B6E2850280609466AD1535E8DD16CB /* VirtualTimeScheduler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VirtualTimeScheduler.swift; path = RxSwift/Schedulers/VirtualTimeScheduler.swift; sourceTree = "<group>"; };
@@ -782,10 +790,12 @@
 		01200E950B4722E1F608891D71CB5290 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
-				A0C7668A26A4EA8F009F05A8 /* IntervalViewControllers */,
-				A0C7667426A4CBA1009F05A8 /* Views */,
-				A0C7666F26A4CB11009F05A8 /* Extensions */,
-				A0C7665826A4BF3B009F05A8 /* Protocols */,
+				A0C766F326A5FF56009F05A8 /* Extensions */,
+				A0C766F626A5FF56009F05A8 /* Helpers */,
+				A0C766ED26A5FF55009F05A8 /* IntervalViewControllers */,
+				A0C766F726A5FF56009F05A8 /* Layouts */,
+				A0C766F926A5FF56009F05A8 /* Protocols */,
+				A0C7670826A5FF56009F05A8 /* Views */,
 				F0CF6EDD9DE9EA4D1BFA7B005DFDC468 /* KeyboardStateObserver.swift */,
 				6C0307C3132CA3C9D6CA198086BAB7E5 /* Coordinator.swift */,
 				A0C766D426A5AAB1009F05A8 /* CNavigationController.swift */,
@@ -794,6 +804,8 @@
 				A0C766BD26A4EEA2009F05A8 /* CTableViewController.swift */,
 				A0C766BF26A4EEA2009F05A8 /* CViewModelViewController.swift */,
 				A0C766D026A59C14009F05A8 /* CScrollViewController.swift */,
+				A0C766D826A5F334009F05A8 /* ScrollViewKeyboardAdjustment.swift */,
+				A0C766DC26A5F70B009F05A8 /* CViewModelScrollViewController.swift */,
 				3E5345A59FCBF056896223D2FA592C06 /* Pod */,
 				9C9DD9871EA2FF11D9F5A3985B8F7744 /* Support Files */,
 			);
@@ -943,56 +955,78 @@
 			path = "Example/Pods/Target Support Files/Coordinators";
 			sourceTree = "<group>";
 		};
-		A0C7665826A4BF3B009F05A8 /* Protocols */ = {
+		A0C766ED26A5FF55009F05A8 /* IntervalViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				A0C766A426A4ED2A009F05A8 /* Dequeuable.swift */,
-				A0C766A726A4ED2A009F05A8 /* Initializable.swift */,
-				A0C766A626A4ED2A009F05A8 /* Layout.swift */,
-				A0C766AE26A4ED2A009F05A8 /* Layoutable.swift */,
-				A0C766A826A4ED2A009F05A8 /* LayoutDistance.swift */,
-				A0C766A526A4ED2A009F05A8 /* ListViewModel.swift */,
-				A0C766AB26A4ED2A009F05A8 /* RxListViewModel.swift */,
-				A0C766A326A4ED2A009F05A8 /* ScrollViewHolder.swift */,
-				A0C766AD26A4ED2A009F05A8 /* Setupable.swift */,
-				A0C766AA26A4ED2A009F05A8 /* TableViewHolder.swift */,
-				A0C766A926A4ED2A009F05A8 /* ViewAware.swift */,
-				A0C766A226A4ED2A009F05A8 /* ViewHolder.swift */,
-				A0C766AC26A4ED2A009F05A8 /* ViewModel.swift */,
-				A0C766A126A4ED2A009F05A8 /* ViewModelHolder.swift */,
+				A0C766EE26A5FF55009F05A8 /* InternalTableViewController.swift */,
+				A0C766EF26A5FF55009F05A8 /* InternalViewModelScrollViewController.swift */,
+				A0C766F026A5FF55009F05A8 /* InternalViewController.swift */,
+				A0C766F126A5FF55009F05A8 /* InternalViewModelViewController.swift */,
+				A0C766F226A5FF55009F05A8 /* InternalHostingViewController.swift */,
 			);
-			path = Protocols;
+			name = IntervalViewControllers;
+			path = Coordinators/Classes/IntervalViewControllers;
 			sourceTree = "<group>";
 		};
-		A0C7666F26A4CB11009F05A8 /* Extensions */ = {
+		A0C766F326A5FF56009F05A8 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				A0C7669D26A4ED1D009F05A8 /* UICollectionView+Dequeuable.swift */,
-				A0C7669E26A4ED1D009F05A8 /* UITableView+Dequeuable.swift */,
-				A0C766CC26A59A0F009F05A8 /* UIView+Layout.swift */,
+				A0C7672526A5FFD7009F05A8 /* UIView+Layout.swift */,
+				A0C766F426A5FF56009F05A8 /* UITableView+Dequeuable.swift */,
+				A0C766F526A5FF56009F05A8 /* UICollectionView+Dequeuable.swift */,
 			);
-			path = Extensions;
+			name = Extensions;
+			path = Coordinators/Classes/Extensions;
 			sourceTree = "<group>";
 		};
-		A0C7667426A4CBA1009F05A8 /* Views */ = {
+		A0C766F626A5FF56009F05A8 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				A0C7669A26A4ED10009F05A8 /* CCollectionViewCell.swift */,
-				A0C7669926A4ED10009F05A8 /* CTableViewCell.swift */,
 			);
-			path = Views;
+			name = Helpers;
+			path = Coordinators/Classes/Helpers;
 			sourceTree = "<group>";
 		};
-		A0C7668A26A4EA8F009F05A8 /* IntervalViewControllers */ = {
+		A0C766F726A5FF56009F05A8 /* Layouts */ = {
 			isa = PBXGroup;
 			children = (
-				A0C7669226A4ED03009F05A8 /* InternalHostingViewController.swift */,
-				A0C7669326A4ED03009F05A8 /* InternalTableViewController.swift */,
-				A0C7669126A4ED03009F05A8 /* InternalViewController.swift */,
-				A0C7669426A4ED03009F05A8 /* InternalViewModelViewController.swift */,
-				A0C766CA26A5999F009F05A8 /* InternalScrollViewController.swift */,
+				A0C766F826A5FF56009F05A8 /* CommonLayout.swift */,
 			);
-			path = IntervalViewControllers;
+			name = Layouts;
+			path = Coordinators/Classes/Layouts;
+			sourceTree = "<group>";
+		};
+		A0C766F926A5FF56009F05A8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A0C766FA26A5FF56009F05A8 /* ViewModelHolder.swift */,
+				A0C766FB26A5FF56009F05A8 /* RxListViewModel.swift */,
+				A0C766FC26A5FF56009F05A8 /* Initializable.swift */,
+				A0C766FD26A5FF56009F05A8 /* Dequeuable.swift */,
+				A0C766FE26A5FF56009F05A8 /* Layoutable.swift */,
+				A0C766FF26A5FF56009F05A8 /* TableViewHolder.swift */,
+				A0C7670026A5FF56009F05A8 /* LayoutDistance.swift */,
+				A0C7670126A5FF56009F05A8 /* ViewModel.swift */,
+				A0C7670226A5FF56009F05A8 /* Setupable.swift */,
+				A0C7670326A5FF56009F05A8 /* ScrollViewHolder.swift */,
+				A0C7670426A5FF56009F05A8 /* ViewAware.swift */,
+				A0C7670526A5FF56009F05A8 /* ListViewModel.swift */,
+				A0C7670626A5FF56009F05A8 /* Layout.swift */,
+				A0C7670726A5FF56009F05A8 /* ViewHolder.swift */,
+			);
+			name = Protocols;
+			path = Coordinators/Classes/Protocols;
+			sourceTree = "<group>";
+		};
+		A0C7670826A5FF56009F05A8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A0C7670926A5FF56009F05A8 /* CCollectionViewCell.swift */,
+				A0C7670A26A5FF56009F05A8 /* CTableViewCell.swift */,
+				A0C7670B26A5FF56009F05A8 /* ScrollableVStack.swift */,
+			);
+			name = Views;
+			path = Coordinators/Classes/Views;
 			sourceTree = "<group>";
 		};
 		A77D0201B640564105D4C1B12A6A97F5 /* Pods */ = {
@@ -1576,39 +1610,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0C766B826A4ED2A009F05A8 /* TableViewHolder.swift in Sources */,
+				A0C7670C26A5FF56009F05A8 /* InternalTableViewController.swift in Sources */,
 				A0C766D526A5AAB2009F05A8 /* CNavigationController.swift in Sources */,
-				A0C766B226A4ED2A009F05A8 /* Dequeuable.swift in Sources */,
-				A0C7669726A4ED03009F05A8 /* InternalTableViewController.swift in Sources */,
+				A0C7671926A5FF56009F05A8 /* TableViewHolder.swift in Sources */,
 				E1D40C8E74FE381364A99079EB6974B9 /* KeyboardStateObserver.swift in Sources */,
-				A0C7669C26A4ED10009F05A8 /* CCollectionViewCell.swift in Sources */,
 				A0C766C026A4EEA2009F05A8 /* CTableViewController.swift in Sources */,
-				A0C766B526A4ED2A009F05A8 /* Initializable.swift in Sources */,
+				A0C7672126A5FF56009F05A8 /* ViewHolder.swift in Sources */,
+				A0C7672326A5FF56009F05A8 /* CTableViewCell.swift in Sources */,
+				A0C7672026A5FF56009F05A8 /* Layout.swift in Sources */,
+				A0C7670F26A5FF56009F05A8 /* InternalViewModelViewController.swift in Sources */,
 				929F51B6F5136A4C827661623320FF43 /* Coordinator.swift in Sources */,
-				A0C766CB26A5999F009F05A8 /* InternalScrollViewController.swift in Sources */,
-				A0C766BC26A4ED2A009F05A8 /* Layoutable.swift in Sources */,
+				A0C7671026A5FF56009F05A8 /* InternalHostingViewController.swift in Sources */,
+				A0C7671726A5FF56009F05A8 /* Dequeuable.swift in Sources */,
 				A0C766D126A59C14009F05A8 /* CScrollViewController.swift in Sources */,
-				A0C766B326A4ED2A009F05A8 /* ListViewModel.swift in Sources */,
-				A0C766A026A4ED1D009F05A8 /* UITableView+Dequeuable.swift in Sources */,
-				A0C766BA26A4ED2A009F05A8 /* ViewModel.swift in Sources */,
+				A0C7671B26A5FF56009F05A8 /* ViewModel.swift in Sources */,
 				B33893A5526EF5D7C9B65DEF827EA78C /* Coordinators-dummy.m in Sources */,
-				A0C766BB26A4ED2A009F05A8 /* Setupable.swift in Sources */,
 				A0C766C226A4EEA2009F05A8 /* CViewModelViewController.swift in Sources */,
-				A0C766CD26A59A0F009F05A8 /* UIView+Layout.swift in Sources */,
+				A0C766D926A5F334009F05A8 /* ScrollViewKeyboardAdjustment.swift in Sources */,
+				A0C7671526A5FF56009F05A8 /* RxListViewModel.swift in Sources */,
+				A0C7671226A5FF56009F05A8 /* UICollectionView+Dequeuable.swift in Sources */,
 				CF9AF4B521AE2CDFECE8058B641B237C /* CViewController.swift in Sources */,
-				A0C7669B26A4ED10009F05A8 /* CTableViewCell.swift in Sources */,
-				A0C766B926A4ED2A009F05A8 /* RxListViewModel.swift in Sources */,
-				A0C7669526A4ED03009F05A8 /* InternalViewController.swift in Sources */,
-				A0C766B726A4ED2A009F05A8 /* ViewAware.swift in Sources */,
-				A0C766AF26A4ED2A009F05A8 /* ViewModelHolder.swift in Sources */,
-				A0C766B126A4ED2A009F05A8 /* ScrollViewHolder.swift in Sources */,
+				A0C7672426A5FF56009F05A8 /* ScrollableVStack.swift in Sources */,
+				A0C7671126A5FF56009F05A8 /* UITableView+Dequeuable.swift in Sources */,
+				A0C7671426A5FF56009F05A8 /* ViewModelHolder.swift in Sources */,
+				A0C7671A26A5FF56009F05A8 /* LayoutDistance.swift in Sources */,
+				A0C7671D26A5FF56009F05A8 /* ScrollViewHolder.swift in Sources */,
+				A0C7671E26A5FF56009F05A8 /* ViewAware.swift in Sources */,
+				A0C7671326A5FF56009F05A8 /* CommonLayout.swift in Sources */,
 				A0C766C126A4EEA2009F05A8 /* CHostingViewController.swift in Sources */,
-				A0C766B626A4ED2A009F05A8 /* LayoutDistance.swift in Sources */,
-				A0C7669626A4ED03009F05A8 /* InternalHostingViewController.swift in Sources */,
-				A0C7669826A4ED03009F05A8 /* InternalViewModelViewController.swift in Sources */,
-				A0C766B026A4ED2A009F05A8 /* ViewHolder.swift in Sources */,
-				A0C766B426A4ED2A009F05A8 /* Layout.swift in Sources */,
-				A0C7669F26A4ED1D009F05A8 /* UICollectionView+Dequeuable.swift in Sources */,
+				A0C7670D26A5FF56009F05A8 /* InternalViewModelScrollViewController.swift in Sources */,
+				A0C7671C26A5FF56009F05A8 /* Setupable.swift in Sources */,
+				A0C766DD26A5F70B009F05A8 /* CViewModelScrollViewController.swift in Sources */,
+				A0C7671826A5FF56009F05A8 /* Layoutable.swift in Sources */,
+				A0C7672226A5FF56009F05A8 /* CCollectionViewCell.swift in Sources */,
+				A0C7670E26A5FF56009F05A8 /* InternalViewController.swift in Sources */,
+				A0C7671F26A5FF56009F05A8 /* ListViewModel.swift in Sources */,
+				A0C7671626A5FF56009F05A8 /* Initializable.swift in Sources */,
+				A0C7672626A5FFD7009F05A8 /* UIView+Layout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
