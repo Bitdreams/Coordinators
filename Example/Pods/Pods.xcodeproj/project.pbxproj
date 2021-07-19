@@ -621,7 +621,7 @@
 		A0C766CA26A5999F009F05A8 /* InternalScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InternalScrollViewController.swift; path = ../Example/Coordinators/InternalScrollViewController.swift; sourceTree = "<group>"; };
 		A0C766CC26A59A0F009F05A8 /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIView+Layout.swift"; path = "../Example/Coordinators/UIView+Layout.swift"; sourceTree = "<group>"; };
 		A0C766D026A59C14009F05A8 /* CScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CScrollViewController.swift; path = Coordinators/Classes/CScrollViewController.swift; sourceTree = "<group>"; };
-		A0C766D226A5A682009F05A8 /* KeyboardStateObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeyboardStateObserver.swift; path = ../Coordinators/Classes/Helpers/KeyboardStateObserver.swift; sourceTree = "<group>"; };
+		A0C766D226A5A682009F05A8 /* KeyboardStateObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardStateObserver.swift; sourceTree = "<group>"; };
 		A1BEBF44120A1C38AAF5172362CF4D98 /* BeginWithPrefix.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeginWithPrefix.swift; path = Sources/Nimble/Matchers/BeginWithPrefix.swift; sourceTree = "<group>"; };
 		A3432A55213636B15D045381469086DB /* QuickTestObservation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickTestObservation.swift; path = Sources/Quick/QuickTestObservation.swift; sourceTree = "<group>"; };
 		A3B6E2850280609466AD1535E8DD16CB /* VirtualTimeScheduler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VirtualTimeScheduler.swift; path = RxSwift/Schedulers/VirtualTimeScheduler.swift; sourceTree = "<group>"; };
@@ -782,7 +782,7 @@
 		01200E950B4722E1F608891D71CB5290 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
-				A0C766C326A58A25009F05A8 /* Helpers */,
+				A0C766D226A5A682009F05A8 /* KeyboardStateObserver.swift */,
 				A0C7668A26A4EA8F009F05A8 /* IntervalViewControllers */,
 				A0C7667426A4CBA1009F05A8 /* Views */,
 				A0C7666F26A4CB11009F05A8 /* Extensions */,
@@ -993,14 +993,6 @@
 				A0C766CA26A5999F009F05A8 /* InternalScrollViewController.swift */,
 			);
 			path = IntervalViewControllers;
-			sourceTree = "<group>";
-		};
-		A0C766C326A58A25009F05A8 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				A0C766D226A5A682009F05A8 /* KeyboardStateObserver.swift */,
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 		A77D0201B640564105D4C1B12A6A97F5 /* Pods */ = {
