@@ -206,8 +206,8 @@
 		A0C766C226A4EEA2009F05A8 /* CViewModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C766BF26A4EEA2009F05A8 /* CViewModelViewController.swift */; };
 		A0C766CB26A5999F009F05A8 /* InternalScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C766CA26A5999F009F05A8 /* InternalScrollViewController.swift */; };
 		A0C766CD26A59A0F009F05A8 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C766CC26A59A0F009F05A8 /* UIView+Layout.swift */; };
-		A0C766CF26A59C07009F05A8 /* KeyboardStateObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C766CE26A59C07009F05A8 /* KeyboardStateObserver.swift */; };
 		A0C766D126A59C14009F05A8 /* CScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C766D026A59C14009F05A8 /* CScrollViewController.swift */; };
+		A0C766D326A5A682009F05A8 /* KeyboardStateObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C766D226A5A682009F05A8 /* KeyboardStateObserver.swift */; };
 		A169C7CDD8C68B1A3B0D06B7FCC863B8 /* CombineLatest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E948F48B60FC6A048D8029A2D2F1784C /* CombineLatest.swift */; };
 		A1D30A36109E6A90E1791B51BAE55A72 /* BeLessThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CF3D09162687F30F9EC062E3FBB51F /* BeLessThan.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		A2E094FD5BEBFC4313FBCC38E81D027A /* AsyncSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE567D7F5CE0FFFA39725885AFA227D1 /* AsyncSubject.swift */; };
@@ -620,8 +620,8 @@
 		A0C766BF26A4EEA2009F05A8 /* CViewModelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CViewModelViewController.swift; path = Coordinators/Classes/CViewModelViewController.swift; sourceTree = "<group>"; };
 		A0C766CA26A5999F009F05A8 /* InternalScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InternalScrollViewController.swift; path = ../Example/Coordinators/InternalScrollViewController.swift; sourceTree = "<group>"; };
 		A0C766CC26A59A0F009F05A8 /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIView+Layout.swift"; path = "../Example/Coordinators/UIView+Layout.swift"; sourceTree = "<group>"; };
-		A0C766CE26A59C07009F05A8 /* KeyboardStateObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeyboardStateObserver.swift; path = ../Coordinators/Classes/Helpers/KeyboardStateObserver.swift; sourceTree = "<group>"; };
 		A0C766D026A59C14009F05A8 /* CScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CScrollViewController.swift; path = Coordinators/Classes/CScrollViewController.swift; sourceTree = "<group>"; };
+		A0C766D226A5A682009F05A8 /* KeyboardStateObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeyboardStateObserver.swift; path = ../Coordinators/Classes/Helpers/KeyboardStateObserver.swift; sourceTree = "<group>"; };
 		A1BEBF44120A1C38AAF5172362CF4D98 /* BeginWithPrefix.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeginWithPrefix.swift; path = Sources/Nimble/Matchers/BeginWithPrefix.swift; sourceTree = "<group>"; };
 		A3432A55213636B15D045381469086DB /* QuickTestObservation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickTestObservation.swift; path = Sources/Quick/QuickTestObservation.swift; sourceTree = "<group>"; };
 		A3B6E2850280609466AD1535E8DD16CB /* VirtualTimeScheduler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VirtualTimeScheduler.swift; path = RxSwift/Schedulers/VirtualTimeScheduler.swift; sourceTree = "<group>"; };
@@ -998,7 +998,7 @@
 		A0C766C326A58A25009F05A8 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				A0C766CE26A59C07009F05A8 /* KeyboardStateObserver.swift */,
+				A0C766D226A5A682009F05A8 /* KeyboardStateObserver.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -1591,6 +1591,7 @@
 				A0C7669C26A4ED10009F05A8 /* CCollectionViewCell.swift in Sources */,
 				A0C766C026A4EEA2009F05A8 /* CTableViewController.swift in Sources */,
 				A0C766B526A4ED2A009F05A8 /* Initializable.swift in Sources */,
+				A0C766D326A5A682009F05A8 /* KeyboardStateObserver.swift in Sources */,
 				929F51B6F5136A4C827661623320FF43 /* Coordinator.swift in Sources */,
 				A0C766CB26A5999F009F05A8 /* InternalScrollViewController.swift in Sources */,
 				A0C766BC26A4ED2A009F05A8 /* Layoutable.swift in Sources */,
@@ -1615,7 +1616,6 @@
 				A0C7669826A4ED03009F05A8 /* InternalViewModelViewController.swift in Sources */,
 				A0C766B026A4ED2A009F05A8 /* ViewHolder.swift in Sources */,
 				A0C766B426A4ED2A009F05A8 /* Layout.swift in Sources */,
-				A0C766CF26A59C07009F05A8 /* KeyboardStateObserver.swift in Sources */,
 				A0C7669F26A4ED1D009F05A8 /* UICollectionView+Dequeuable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
