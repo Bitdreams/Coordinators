@@ -21,8 +21,8 @@ open class InternalViewModelScrollViewController<V: UIView & ScrollViewHolder, V
         return .none
     }
     
-    public override func keyBoardWillShow(endframe: CGRect?) {
-        super.keyBoardWillShow(endframe: endframe)
+    public override func keyboardWillShow(endframe: CGRect?) {
+        super.keyboardWillShow(endframe: endframe)
         
         switch scrollViewKeyboardAdjustment {
         case .bottomConstraint:

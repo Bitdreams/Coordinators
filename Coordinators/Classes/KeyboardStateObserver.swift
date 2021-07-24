@@ -38,7 +38,7 @@ open class KeyboardStateObserver: NSObject {
 
     @objc public func keyboardWillShow(notification: Notification) {
         let keyboardSize = keyboardSizeFrom(userInfo: notification.userInfo)
-        delegate?.keyBoardWillShow(endframe: keyboardSize)
+        delegate?.keyboardWillShow(endframe: keyboardSize)
     }
 
     @objc public func keyboardDidShow(notification: Notification) {
