@@ -8,7 +8,7 @@
 import UIKit
 
 public protocol KeyboardStateObserverDelegate: AnyObject {
-    func keyBoardWillShow(endframe: CGRect?)
+    func keyboardWillShow(endframe: CGRect?)
     func keyboardDidShow(endframe: CGRect?)
     func keyboardWillHide(endframe: CGRect?)
     func keyboardDidHide(endframe: CGRect?)

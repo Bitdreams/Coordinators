@@ -96,7 +96,7 @@ open class CViewController: UIViewController, CViewControllerProtocol, ViewAware
     
     // MARK: Keyboard
     
-    open func keyBoardWillShow(endframe: CGRect?) {
+    open func keyboardWillShow(endframe: CGRect?) {
         // Not implemented here
     }
     
