@@ -11,6 +11,16 @@ import Coordinators
 
 final class StackViewController: CScrollViewController<ScrollableVStack> {
     
+    override init() {
+        super.init()
+        let view = UIView()
+        view.backgroundColor = .gray
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.heightAnchor.constraint(equalToConstant: 145).isActive = true
+        
+        bottomPaneView = view
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

@@ -20,6 +20,11 @@ open class InternalTableViewController<V: UIView & TableViewHolder, VM: ListView
         return hostedView.tableView
     }
     
+    open override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        setupBottomPaneInsets()
+    }
+    
     open func numberOfSections(in tableView: UITableView) -> Int {
         return viewModel.numberOfSections
     }
@@ -38,6 +43,11 @@ open class InternalTableViewController<V: UIView & TableViewHolder, VM: ListView
     
     open func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return viewModel.section(for: section)?.title
+    }
+    
+    public func setupBottomPaneInsets() {
+        super.setupBottomPaneInsets()
+        adjustScrolViewInsets(scrollView, for: bottomPaneView)
     }
     
 }

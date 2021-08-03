@@ -27,11 +27,13 @@ extension CViewControllerProtocol where Self : UIAdaptivePresentationControllerD
     
 }
 
-open class CViewController: UIViewController, CViewControllerProtocol, ViewAware, KeyboardStateObserverDelegate {
+open class CViewController: UIViewController, CViewControllerProtocol, ViewAware, KeyboardStateObserverDelegate, StickyBottomPaneProtocol {
 
     weak public var cViewControllerDelegate: CViewControllerDelegate?
     
     public let keyboardStateObserver = KeyboardStateObserver()
+    
+    open var bottomPaneView: UIView = UIView()
     
     public init() {
         super.init(nibName: nil, bundle: nil)
@@ -91,7 +93,7 @@ open class CViewController: UIViewController, CViewControllerProtocol, ViewAware
     }
     
     open func setupLayout() {
-        // To be overriden
+        setupBottomPane()
     }
     
     // MARK: Keyboard

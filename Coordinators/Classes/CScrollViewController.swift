@@ -21,6 +21,11 @@ open class CScrollViewController<V: UIView & ScrollViewHolder>: CHostingViewCont
         return .none
     }
     
+    open override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        setupBottomPaneInsets()
+    }
+    
     public override func keyboardWillShow(endframe: CGRect?) {
         super.keyboardWillShow(endframe: endframe)
         
@@ -56,6 +61,11 @@ open class CScrollViewController<V: UIView & ScrollViewHolder>: CHostingViewCont
         default:
             break
         }
+    }
+    
+    public func setupBottomPaneInsets() {
+        super.setupBottomPaneInsets()
+        adjustScrolViewInsets(scrollView, for: bottomPaneView)
     }
     
 }
