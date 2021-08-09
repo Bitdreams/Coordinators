@@ -7,6 +7,8 @@
 
 import UIKit
 
+/// A simple scrollable view controller that is constrained to work with a specific view model
+/// This view controller automatically notifies its InternalCoordinator of any navigation change
 open class InternalViewModelScrollViewController<V: UIView & ScrollViewHolder, VM: ViewModel>: InternalViewModelViewController<V, VM> {
     
     let keyboardAnimationTime: TimeInterval = 0.3

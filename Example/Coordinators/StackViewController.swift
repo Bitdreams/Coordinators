@@ -9,6 +9,7 @@
 import UIKit
 import Coordinators
 
+/// A Simple scrollable view controller that consists of a vertical stack
 final class StackViewController: CScrollViewController<ScrollableVStack> {
     
     override init() {

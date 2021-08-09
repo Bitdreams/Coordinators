@@ -7,6 +7,8 @@
 
 import UIKit
 
+/// A view controller consisting of a single UITableView that is constrained to work with a specific type of item listed in its view model
+/// This view controller automatically notifies its InternalCoordinator of any navigation change
 open class InternalTableViewController<V: UIView & TableViewHolder, VM: ListViewModel, C: CTableViewCell<VM.Item>>: CViewModelViewController<V, VM>, TableViewHolder, UITableViewDataSource {
     
     open override func setup() {
@@ -16,6 +18,8 @@ open class InternalTableViewController<V: UIView & TableViewHolder, VM: ListView
         tableView.dataSource = self
     }
     
+    
+    /// The table view
     open var tableView: UITableView {
         return hostedView.tableView
     }
