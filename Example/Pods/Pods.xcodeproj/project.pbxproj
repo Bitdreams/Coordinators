@@ -179,6 +179,9 @@
 		9D9AB36A3892895038BF9DB3EEA2C699 /* Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6276C15685BCEDA3454B3DC61E9F35EC /* Debug.swift */; };
 		9F2643593B001BED9C62BEF8FB0EBF9D /* QuickTestSuite.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B97EB9DB7A9C40F462F87CDF75F4D5 /* QuickTestSuite.swift */; };
 		9FA786BD162F8C8B2F51137F0CC4B6D5 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB6DB8386575A0B4C3019343CB83D5B /* Queue.swift */; };
+		A043EBDA26C4780A00EE75B5 /* CCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A043EBD926C4780A00EE75B5 /* CCollectionViewController.swift */; };
+		A043EBDC26C4787400EE75B5 /* CollectionViewHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A043EBDB26C4787400EE75B5 /* CollectionViewHolder.swift */; };
+		A043EBDE26C47A8C00EE75B5 /* InternalCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A043EBDD26C47A8C00EE75B5 /* InternalCollectionViewController.swift */; };
 		A0C766C026A4EEA2009F05A8 /* CTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C766BD26A4EEA2009F05A8 /* CTableViewController.swift */; };
 		A0C766C126A4EEA2009F05A8 /* CHostingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C766BE26A4EEA2009F05A8 /* CHostingViewController.swift */; };
 		A0C766C226A4EEA2009F05A8 /* CViewModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C766BF26A4EEA2009F05A8 /* CViewModelViewController.swift */; };
@@ -598,6 +601,9 @@
 		9E2D69FEA1D33D99001472118E51C34D /* Platform.Linux.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Platform.Linux.swift; path = Platform/Platform.Linux.swift; sourceTree = "<group>"; };
 		9E3C471DB88E0CE776397E7141E680FA /* QuickConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickConfiguration.swift; path = Sources/Quick/Configuration/QuickConfiguration.swift; sourceTree = "<group>"; };
 		9F5F8BBBFB83F9D4D83026AD6B15591D /* Pods-Coordinators_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Coordinators_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		A043EBD926C4780A00EE75B5 /* CCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CCollectionViewController.swift; path = Coordinators/Classes/CCollectionViewController.swift; sourceTree = "<group>"; };
+		A043EBDB26C4787400EE75B5 /* CollectionViewHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewHolder.swift; sourceTree = "<group>"; };
+		A043EBDD26C47A8C00EE75B5 /* InternalCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalCollectionViewController.swift; sourceTree = "<group>"; };
 		A08270A9A0825E0C794EAFAB2FBBC6CF /* Cancelable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cancelable.swift; path = RxSwift/Cancelable.swift; sourceTree = "<group>"; };
 		A0C766BD26A4EEA2009F05A8 /* CTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CTableViewController.swift; path = Coordinators/Classes/CTableViewController.swift; sourceTree = "<group>"; };
 		A0C766BE26A4EEA2009F05A8 /* CHostingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CHostingViewController.swift; path = Coordinators/Classes/CHostingViewController.swift; sourceTree = "<group>"; };
@@ -806,6 +812,7 @@
 				754B5F0FD80339A5A1866C453B5B8075 /* CViewController.swift */,
 				A0C766BE26A4EEA2009F05A8 /* CHostingViewController.swift */,
 				A0C766BD26A4EEA2009F05A8 /* CTableViewController.swift */,
+				A043EBD926C4780A00EE75B5 /* CCollectionViewController.swift */,
 				A0C766BF26A4EEA2009F05A8 /* CViewModelViewController.swift */,
 				A0C766D026A59C14009F05A8 /* CScrollViewController.swift */,
 				A0C766D826A5F334009F05A8 /* ScrollViewKeyboardAdjustment.swift */,
@@ -967,6 +974,7 @@
 				A0C766F026A5FF55009F05A8 /* InternalViewController.swift */,
 				A0C766F126A5FF55009F05A8 /* InternalViewModelViewController.swift */,
 				A0C766F226A5FF55009F05A8 /* InternalHostingViewController.swift */,
+				A043EBDD26C47A8C00EE75B5 /* InternalCollectionViewController.swift */,
 			);
 			name = IntervalViewControllers;
 			path = Coordinators/Classes/IntervalViewControllers;
@@ -1019,6 +1027,7 @@
 				A0C7670626A5FF56009F05A8 /* Layout.swift */,
 				A0C7670726A5FF56009F05A8 /* ViewHolder.swift */,
 				A0DCB6F026B85B9E004DAE62 /* StickyBottomPaneProtocol.swift */,
+				A043EBDB26C4787400EE75B5 /* CollectionViewHolder.swift */,
 			);
 			name = Protocols;
 			path = Coordinators/Classes/Protocols;
@@ -1616,6 +1625,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A043EBDA26C4780A00EE75B5 /* CCollectionViewController.swift in Sources */,
 				A0C7670C26A5FF56009F05A8 /* InternalTableViewController.swift in Sources */,
 				A0C766D526A5AAB2009F05A8 /* CNavigationController.swift in Sources */,
 				A0C7671926A5FF56009F05A8 /* TableViewHolder.swift in Sources */,
@@ -1640,12 +1650,14 @@
 				CF9AF4B521AE2CDFECE8058B641B237C /* CViewController.swift in Sources */,
 				A0C7672426A5FF56009F05A8 /* ScrollableVStack.swift in Sources */,
 				A0C7671126A5FF56009F05A8 /* UITableView+Dequeuable.swift in Sources */,
+				A043EBDE26C47A8C00EE75B5 /* InternalCollectionViewController.swift in Sources */,
 				A0C7671426A5FF56009F05A8 /* ViewModelHolder.swift in Sources */,
 				A0C7671A26A5FF56009F05A8 /* LayoutDistance.swift in Sources */,
 				A0C7671D26A5FF56009F05A8 /* ScrollViewHolder.swift in Sources */,
 				A0C7671E26A5FF56009F05A8 /* ViewAware.swift in Sources */,
 				A0C7671326A5FF56009F05A8 /* CommonLayout.swift in Sources */,
 				A0C766C126A4EEA2009F05A8 /* CHostingViewController.swift in Sources */,
+				A043EBDC26C4787400EE75B5 /* CollectionViewHolder.swift in Sources */,
 				A0C7670D26A5FF56009F05A8 /* InternalViewModelScrollViewController.swift in Sources */,
 				A0C7671C26A5FF56009F05A8 /* Setupable.swift in Sources */,
 				A0C766DD26A5F70B009F05A8 /* CViewModelScrollViewController.swift in Sources */,
