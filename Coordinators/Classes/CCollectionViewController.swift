@@ -25,11 +25,11 @@ open class CCollectionViewController<V: UIView & CollectionViewHolder, VM: ListV
         setupBottomPaneInsets()
     }
     
-    open  func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return viewModel.numberOfSections
+    open  func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return viewModel.sections.count
     }
     
-    open func collectionView(_ collectionView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    open func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         guard let section = viewModel.section(for: section) else { return 0 }
         return section.items.count
     }
