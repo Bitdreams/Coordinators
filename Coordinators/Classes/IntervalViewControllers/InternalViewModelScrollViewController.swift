@@ -28,7 +28,7 @@ open class InternalViewModelScrollViewController<V: UIView & ScrollViewHolder, V
         setupBottomPaneInsets()
     }
     
-    public override func keyboardWillShow(endframe: CGRect?) {
+    open override func keyboardWillShow(endframe: CGRect?) {
         super.keyboardWillShow(endframe: endframe)
         
         switch scrollViewKeyboardAdjustment {
@@ -49,7 +49,7 @@ open class InternalViewModelScrollViewController<V: UIView & ScrollViewHolder, V
         }
     }
     
-    public override func keyboardWillHide(endframe: CGRect?) {
+    open override func keyboardWillHide(endframe: CGRect?) {
         super.keyboardWillHide(endframe: endframe)
         
         switch scrollViewKeyboardAdjustment {

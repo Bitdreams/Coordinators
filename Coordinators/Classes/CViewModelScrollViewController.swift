@@ -21,7 +21,7 @@ open class CViewModelScrollViewController<V: UIView & ScrollViewHolder, VM: View
         return .none
     }
     
-    public override func keyboardWillShow(endframe: CGRect?) {
+    open override func keyboardWillShow(endframe: CGRect?) {
         super.keyboardWillShow(endframe: endframe)
         
         switch scrollViewKeyboardAdjustment {
@@ -42,7 +42,7 @@ open class CViewModelScrollViewController<V: UIView & ScrollViewHolder, VM: View
         }
     }
     
-    public override func keyboardWillHide(endframe: CGRect?) {
+    open override func keyboardWillHide(endframe: CGRect?) {
         super.keyboardWillHide(endframe: endframe)
         
         switch scrollViewKeyboardAdjustment {

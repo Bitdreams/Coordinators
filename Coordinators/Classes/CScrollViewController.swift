@@ -26,7 +26,7 @@ open class CScrollViewController<V: UIView & ScrollViewHolder>: CHostingViewCont
         setupBottomPaneInsets()
     }
     
-    public override func keyboardWillShow(endframe: CGRect?) {
+    open override func keyboardWillShow(endframe: CGRect?) {
         super.keyboardWillShow(endframe: endframe)
         
         switch scrollViewKeyboardAdjustment {
@@ -47,7 +47,7 @@ open class CScrollViewController<V: UIView & ScrollViewHolder>: CHostingViewCont
         }
     }
     
-    public override func keyboardWillHide(endframe: CGRect?) {
+    open override func keyboardWillHide(endframe: CGRect?) {
         super.keyboardWillHide(endframe: endframe)
         
         switch scrollViewKeyboardAdjustment {

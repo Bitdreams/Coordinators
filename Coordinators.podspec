@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Coordinators'
-  s.version          = '2.0.7'
+  s.version          = '2.0.8'
   s.summary          = 'A framework for light flexible Swift MVVM coordinators'
   s.swift_version    = '5.2'
 
