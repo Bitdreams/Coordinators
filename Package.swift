@@ -30,5 +30,6 @@ let package = Package(
                 "Quick",
                 "Nimble"
             ]),
-    ]
+    ],
+    swiftLanguageVersions: [.v5]
 )
